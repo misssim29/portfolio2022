@@ -1,0 +1,299 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* intro */
+.intro{width:100vw; height: 100vh; z-index: 8; position:absolute; bottom:0; right:0; background: #e6f1e1;}
+.intro1{width:600px; height:380px; position: absolute; top:50%; left:50%; z-index: 15; transform: translate(-50%,-50%);}
+.rail{width:600px; position:absolute}
+.intro_train{width:220px; height: 180px; position:absolute; top:-45px; left:-10px;
+    animation:3s Intro_train .5s forwards ease-in-out;
+    -webkit-animation:3s Intro_train .5s forwards ease-in-out;
+    -moz-animation:3s Intro_train .5s forwards ease-in-out;
+}
+.intro_train .gas2{width:150px; position:absolute; left:35px; top:-50px; animation:Gas infinite 2s;}
+
+@keyframes Intro_train {
+    0%{top:-45px; left:-10px;}
+    100%{top:180px; left:380px;}
+}
+
+.intro2{display: none;}
+.clouds{z-index: 10; position:absolute; width:100%; height: 100%;}
+.clouds img{position:absolute;}
+.cloud1{width:80%; top:0; left:0;}
+.cloud2{width:50%; right:10%; top:10%;}
+.cloud3{width:80%; top:20%; left:10%;}
+.cloud4{width:50%; bottom:10%; left:20%;}
+.cloud5{width:40%; bottom:10%; right:20%;}
+.cloud6{width:70%; bottom:15%; left:15%;}
+.cloud7{width:80%; top:10%; left:20%;}
+.cloud8{width:40%; right:30%; bottom:20%;}
+.cloud9{width:60%; top:20%; left:10%}
+.cloud10{width:50%; bottom:15%; right:10%;}
+.cloud11{width:70%; bottom:20%; right:5%;}
+.hosi{width:50%; z-index: 9; position: absolute; left:50%; top:50%; transform: translate(-50%,-50%);}
+
+/* background */
+
+.wrap{width:100vw; height:100vh; position:absolute; bottom:0; right:0; overflow: hidden;}
+.bg{width:1920px;}
+
+#containment-wrapper{width:1920px; height: 1280px;}
+.draggable { width: 100vw; height: 100vh; text-align: center; position:absolute; cursor:grab;}
+.draggable img{position:absolute; bottom:0; right:0;}
+
+/* train */
+.train1{width:220px; height: 180px; position:absolute; bottom:1420px; right:1150px;
+    animation:Train1 30s infinite linear;
+    -webkit-animation: Train1 30s infinite linear;
+    -moz-animation: Train1 30s infinite linear;
+}
+.train1 .gas2{width:150px; position:absolute; left:35px; top:-50px; animation:Gas infinite 2s;}
+
+.train2{width:220px; height: 180px; position:absolute; bottom:-200px; right:600px; opacity: 0;
+    animation:Train2 30s infinite linear;
+    -webkit-animation: Train2 30s infinite linear;
+    -moz-animation: Train2 30s infinite linear;
+}
+.train2 .gas{width:150px; position:absolute; right:35px; top:-122px; animation:Gas infinite 2s ;}
+
+@keyframes Gas {
+    0%{opacity: 0;}
+    80%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes Train1 {
+    0%{bottom:1420px; right:1180px;}
+    50%{bottom:602px; right:-240px}
+    100%{bottom:602px; right:-240px;}
+}
+
+@keyframes Train2 {
+    0%{bottom:-200px; right:600px; opacity: 0;}
+    50%{ bottom:-200px; right:600px; opacity: 0;}
+    51%{opacity: 1;}
+    100%{bottom:635px; right:2050px; opacity: 1;}
+} 
+
+/* balloon */
+.balloon{width:144px; height: 186px; position:absolute; bottom:1040px; right:1690px; animation:Balloon_move 60s infinite linear; z-index: 5;}
+.balloon_on{animation: Balloon 3s infinite ease-in-out;}
+
+@keyframes Balloon {
+    0%{transform: rotate(-10deg);}
+    50%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
+
+@keyframes Balloon_move {
+    0%{bottom:1040px; right:1690px;}
+    20%{bottom:1120px; right:950px;}
+    40%{bottom:940px; right:120px;}
+    60%{bottom:80px; right:280px;}
+    85%{bottom:440px; right:1650px;}
+    100%{bottom:1040px; right:1690px;}
+}
+
+/* btns */
+.btns img{width:200px; position:absolute; cursor: pointer; animation:Btn 2s infinite; transform-origin: bottom; z-index: 4;}
+.btns .btn_deliver{bottom:829px; right:773px; }
+.btns .btn_deliver:hover{width:240px; right:753px; }
+.btns .btn_dm{right:1338px; bottom:765px;}
+.btns .btn_dm:hover{width:240px; right:1308px;}
+.btns .btn_learn{right:24px; bottom:1004px;}
+.btns .btn_learn:hover{width:240px; right:4px;}
+.btns .btn_quiz{right:718px; bottom:1075px}
+.btns .btn_quiz:hover{width:240px; right:688px;}
+.btns .btn_solimix{right:700px; bottom:550px;}
+.btns .btn_solimix:hover{width:240px; right:670px;}
+
+@keyframes Btn {
+    0%{transform: rotate(-4deg); }
+    50%{transform: rotate(4deg);}
+    100%{transform: rotate(-4deg);}
+}
+
+/* pictures */
+.sanofi_building{width:320px; height: 526px; position:absolute;
+    bottom:562px; right:0; z-index: 2;
+}
+.tree{width:368px; height: 320px; position:absolute;
+    bottom:263px; right:1552px; z-index: 2;}
+
+
+/* popup */
+.popup{width:100vw; height:100vh; z-index: 8; position:absolute; top:0; right:-100vw; display: none; background:rgba(0,0,0,0.5); overflow-y: scroll; overflow-x:hidden;}
+.popup1, .popup2, .popup3, .popup4, .popup5{width:80%; display: none; float:right;}
+.popup img{width:100%}
+.popup button{background:none; position:absolute; border: none; cursor: pointer;}
+.popup .close{width:5%; right:1%; top:.2vw; position:fixed; z-index: 16; display: none;}
+
+
+/* popup_dm */
+
+.popup_dm .pi{width:6%; height: 2vw; left:25%; top:1vw; }
+.popup_dm .goto2005{width:15%; height: 10vw; left:21%; top:5vw; }
+.popup_dm .goto2015{width:15%; height: 10vw; left:41.5%; top:5vw;}
+.popup_dm .goto2018{width:15%; height: 10vw; left:64%; top:5vw;}
+.pages{width:100%; background:rgba(0,0,0,0.5); position:absolute; z-index: 14; top:0; left:0; min-height: 100vh; display: none;}
+.page_pi{display: none; width:80%;  margin:0 auto; }
+.pages > div{position:relative; display: none; width:80%; float:right; height: 100vh; overflow: scroll;}
+#return{width:5%; position:absolute; left:20%; top:.5%; z-index: 15; display: none;}
+.page1 #more{width:21%; height: 6vw;  position:absolute; right:8%; top:39vw;}
+.page2 #more{width:21%; height: 6vw;  position:absolute; right:8%; top:45vw; }
+.page3 #more{width:21%; height: 6vw;  position:absolute; right:8%; top:45vw; }
+.pages .result{width:100%; background:rgba(0,0,0,0.5); position:absolute;}
+.pages .result img{width:80%; float:right;}
+
+.popup_quiz .quiz1{width:80%; position:absolute; height: 53vw;}
+.popup_quiz .quiz1 button{z-index: 11; }
+.popup_quiz .quiz1_bg{position:absolute; width:100%}
+.popup_quiz .result{display: none; position:absolute; left:0%; top:0; width:100%; }
+.popup_quiz .quiz1 .btn_result img{display: none; width:100%; position: absolute; top:0; left:0;}
+.popup_quiz .quiz1 .result1{background: none; width:15%; height: 10vw; position:absolute; top:7vw; right:0%; background: url(../images/quiz1_before.png) no-repeat; background-size: 100%; }
+.popup_quiz .quiz1 .result2{background: none; width:15%; height: 10vw; position:absolute; top:22vw; right:0%; background: url(../images/quiz1_before.png) no-repeat; background-size: 100%; }
+.popup_quiz .quiz1 .result3{ background: none; width:15%; height: 10vw; position:absolute; top:39.5vw; right:0%; background: url(../images/quiz1_before.png) no-repeat; background-size: 100%;}
+.popup_quiz .next{position:absolute; width:15%; right:8%; top:1vw;}
+
+.popup_quiz .quiz2{width:80%; position:absolute; height: 53vw; display: none;}
+.popup_quiz .quiz2 button{z-index: 11;}
+.popup_quiz .quiz2_bg{position:absolute; width:100%}
+.popup_quiz .quiz2 .btn_result img{display: none; width:100%; position: absolute; top:0; left:0;}
+.popup_quiz .quiz2 .result1{background: none; width:15%; height: 10vw; position:absolute; top:8vw; right:0%; background: url(../images/quiz2_before.png) no-repeat; background-size: 100%;}
+.popup_quiz .quiz2 .result2{background: none; width:15%; height: 10vw; position:absolute; top:26vw; right:0%; background: url(../images/quiz2_before.png) no-repeat; background-size: 100%; }
+.popup_quiz .quiz2 .result3{ background: none; width:15%; height: 10vw; position:absolute; top:42vw; right:0%; background: url(../images/quiz2_before.png) no-repeat; background-size: 100%; }
+
+.popup_portfolio a{position:absolute; display: block;}
+.popup_portfolio .nav1{top:10vw; right:45%; width:25%; height: 30vw;}
+.popup_portfolio .nav2{top:17vw; right:11%;  width:23%; height: 20vw;}
+.popup_portfolio .nav3{top:41vw; right:45%;  width:25%; height: 31vw;}
+.popup_portfolio .nav4{top:41vw; right:9%;  width:25%; height: 31vw;}
+.popup_portfolio .nav5{top:85vw; right:46%;  width:22%; height: 17vw;}
+.popup_portfolio .nav6{top:85vw; right:11%;  width:22%; height: 17vw;}
+.popup_portfolio .nav7{top:104.5vw; right:46%;  width:22%; height: 17vw;}
+.popup_portfolio .nav8{top:106vw; right:11%;  width:22%; height: 13vw;}
+.popup_portfolio .nav9{top:135vw; right:45%;  width:24%; height: 22vw;}
+.popup_portfolio .nav10{top:139vw; right:10%;  width:23%; height: 22vw;}
+.popup_portfolio .nav11{top:163vw; right:45%;  width:24%; height: 16vw;}
+
+/* sound */
+.sound .btn_sound{width:3vw; height: 3vw;  border:none; cursor: pointer; position: fixed;; right:1vw; bottom:2vw; z-index: 5}
+.sound .btn_sound.off{background: url(../images/sound_off.png) no-repeat; background-size: 100%;}
+.sound .btn_sound.on{background: url(../images/sound_on.png) no-repeat; background-size: 100%;}
+
+/* txt */
+.txt{position: fixed; bottom:0vw; left:0; width:100vw; height: 1.5vw; z-index: 5;}
+.txt p{ bottom:0; font-size:.6vw; color:#222; display: inline-block; line-height: 1.5vw; margin:0 1vw;}
+.txt_right{float:right;}
+
+/* ---------------------------media css--------------------------- */
+@media screen and (min-width:1901px){
+
+    /* bg */
+    .bg{width:100vw; height: 66vw}
+    #containment-wrapper{width:100vw; height: 66vw}
+
+
+    /* train */
+    .train1{width:220px; height: 180px; position:absolute; bottom:89vw; right:90vw;
+        animation:TrainB1 30s infinite linear;
+        -webkit-animation: TrainB1 30s infinite linear;
+        -moz-animation: TrainB1 30s infinite linear;
+    }
+    .train2{width:220px; height: 180px; position:absolute; bottom:-9vw; right:35vw; opacity: 0;
+        animation:TrainB2 30s infinite linear;
+        -webkit-animation: TrainB2 30s infinite linear;
+        -moz-animation: TrainB2 30s infinite linear;
+    }
+    @keyframes TrainB1 {
+        0%{bottom:89vw; right:90vw;}
+        50%{bottom:20vw; right:-31vw}
+        100%{bottom:20vw; right:-31vw}
+    }
+
+    @keyframes TrainB2 {
+        0%{bottom:-9vw; right:35vw; opacity: 0;}
+        50%{bottom:-9vw; right:35vw; opacity: 0;}
+        51%{opacity: 1;}
+        100%{bottom:34vw; right:110vw; opacity: 1;}
+    } 
+    /* balloon */
+    .balloon{width:144px; height: 186px; position:absolute; bottom:60vw; right:90vw; animation:Balloon_moveB 60s infinite linear; z-index: 5;}
+
+    @keyframes Balloon_moveB {
+        0%{bottom:60vw; right:90vw;}
+        20%{bottom:64vw; right:45vw;}
+        40%{bottom:50vw; right:5vw;}
+        60%{bottom:1vw; right:20vw;}
+        85%{bottom:20vw; right:90vw;}
+        100%{bottom:60vw; right:90vw;}
+    }
+
+    .sanofi_building{width:18vw; height: 30vw; position:absolute;
+        bottom:28vw; right:0vw; z-index: 2;
+    }
+    .sanofi_building img{width:100%}
+
+    .tree{width:20vw; height: 20vw; position:absolute;
+        bottom:13vw; right:81vw; z-index: 2;}
+    .tree img{Width:100%}
+
+    /* btns */
+
+    .btns img{width:10vw; position:absolute; cursor: pointer; animation:Btn 2s infinite; transform-origin: bottom; z-index: 4;}
+    .btns .btn_deliver{bottom:44vw; right:40vw; }
+    .btns .btn_deliver:hover{width:11vw; right:39.5vw; }
+    .btns .btn_dm{right:72vw; bottom:39vw;}
+    .btns .btn_dm:hover{width:11vw; right:71vw;}
+    .btns .btn_learn{right:1vw; bottom:54vw}
+    .btns .btn_learn:hover{width:11vw; right:0vw}
+    .btns .btn_quiz{right:40vw; bottom:57vw}
+    .btns .btn_quiz:hover{width:11vw; right:39vw;}
+    .btns .btn_solimix{right:34vw; bottom:26vw;}
+    .btns .btn_solimix:hover{width:11vw; right:33vw}
+}
+
+

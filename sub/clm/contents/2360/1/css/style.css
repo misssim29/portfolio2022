@@ -1,0 +1,30 @@
+@charset "utf-8";
+*{padding:0; margin:0;}
+*{-webkit-tap-highlight-color : rgba(0,0,0,0);}
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+button:focus{outline: none;}
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; overflow: hidden; background: url(../images/bg.jpg) no-repeat; background-size: 100%;}
+img{width: 100%;}
+button{background: none; border:none; cursor: pointer;}
+
+.btn_home{width:42px; position:absolute; bottom:82px; right:80px;}
+.btn_pi{width:42px; position:absolute; bottom:82px; right:20px;}
+
+.wheel{width:514px; height: 514px; position:absolute; left:102px; top:115px;}
+.wheel > img{width:257px; width:257px; float: left; margin: 0; padding: 0; cursor: pointer;}
+.pin{width:42px; position:absolute; top:352px; left:339px;}
+
+
+
+.title{width:670px; position:absolute; left:354px; top:206px; height: 200px;}
+.title > div{width:0px; position:absolute; top:0; left: 0; overflow: hidden; height: 200px;}
+.title > div > img{position:absolute; top:0; left:0; width:670px; height: 200px;}
+.w1_txt .txt{opacity: 0; top:10px}

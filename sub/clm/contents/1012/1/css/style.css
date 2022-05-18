@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    } 
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; background:#000}
+img{max-width: 100%;;}
+.box{position: relative; overflow: hidden;}
+.belt{position: absolute;width: 1024px; bottom:38px; left: 0; z-index: 8;}
+#droppable{position:absolute; width:600px; height:400px; top:320px; right: 50px;z-index: 7;}
+.belt_right{position: absolute; width: 324px; height: 252px;; bottom: 95px; right: 0; z-index: 9;}
+.dragContainer{width: 150%; height: 768px; position: absolute; top: 0; left: -650px;}

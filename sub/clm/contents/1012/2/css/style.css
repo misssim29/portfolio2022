@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    } 
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; background:#fff}
+img{max-width: 1024px;}
+.titleLine{position: absolute; top: 0; left: 0; display: none;}
+.typing{position: absolute; top: 0; left: 0;}
+.typing img{position: absolute; display: none;}
+.serch{position: absolute;width:1024px; height:768px; top: 0; left: 0;}
+.serch img{position: absolute; top: 0; left: 0; display: none;}
+.searchResult02, .searchResult03{position: absolute; top: 0; left: 0;width: 0; height: 768px; overflow: hidden;}
+.searchResult02 img , .searchResult03 img{width: 1024px; height: 768px; display:block;}

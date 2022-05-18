@@ -1,0 +1,281 @@
+/*reset*/
+*{margin: 0; padding: 0;}
+*:focus{outline: none}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{font-size:18px}
+/* 레이아웃 */
+.main_page{background: rgb(231, 241, 233); width:100vw; position:relative;}
+.list_page{width:100vw; height: 100vh; position:relative; overflow:hidden;}
+
+/* 소개페이지 */
+
+.main_page .greeting{width:100%; clear:both; padding-top:5vh;}
+.main_page h1{font-size:2rem; font-family: 'Nanum Gothic', sans-serif; margin:2vh auto; text-align: center; opacity: 0; color:rgb(65, 65, 65)} 
+.main_page h1 img{width:2%; min-width:50px; transform-origin: bottom; animation: shaking 1.5s infinite linear 1s;}
+.main_page h2{font-size:2rem; font-family: 'Nanum Gothic', sans-serif; margin:2vh auto; text-align: center; line-height:1.5; color:rgb(65, 65, 65)} 
+.main_title{display: none;}
+.typing {
+	display: inline-block; 
+	animation-name: cursor; 
+	animation-duration: 0.3s; 
+	animation-iteration-count: infinite;
+	} 
+
+@keyframes showing {
+	from{transform:scale(0); opacity: 0;}
+	to{transform:scale(1); opacity: 1;}
+}
+
+@keyframes shaking {
+	0%{transform:rotate(0deg);}
+	50%{transform:rotate(-20deg);}
+	100%{transform:rotate(0deg);}
+}
+@keyframes cursor{ 
+	0%{border-right: 1px solid #fff} 
+	50%{border-right: 1px solid #000} 
+	100%{border-right: 1px solid #fff} 
+}
+
+/* 태그 */
+.tags{width:100%; margin:0 auto; max-width:1000px; margin-top:5vh}
+.tags ul{display: flex; flex-wrap: wrap; width:100%; justify-content: center;}
+.tags ul li{flex-basis:80px; border-radius: 15px; padding:5px 40px; margin:10px 20px;}
+.tags ul li img{width:100%;  opacity: 0; transform:translate(0,20px);}
+.tags ul li img.on{animation:tagApear 1s forwards;}
+
+@keyframes tagApear {
+	to{transform:translate(0,0); opacity: 1;}
+}
+
+/* 스크롤바 */
+.scroll{width:30px; height: 50px; border:2px solid rgb(104, 104, 104); background: none; border-radius: 50px; position:absolute; bottom:5vh; left:50%; transform: translate(-50%,0); cursor: pointer;}
+.scroll span{width:7px; height: 7px; background:rgb(104, 104, 104); display: block; border-radius: 5px; position:absolute; left:50%; top:5px; transform: translate(-50%,0); animation:scrollAni 2s infinite; opacity: 0;}
+.scroll::after{content:"scroll"; font-size:1em; font-family: 'Nanum Gothic', sans-serif; font-weight: bold; color:rgb(104, 104, 104); position:absolute; bottom:-1.9vh; left:-2px}
+.scroll:hover{opacity: .5;}
+
+@keyframes scrollAni{
+	0%{opacity: 0; transform: translate(-50%,0)}
+	40%{opacity: 1;}
+	80%{opacity: 0; transform: translate(-50%,20px);}
+	100%{opacity: 0;}
+}
+
+/* 포폴페이지 */
+
+.list_page_box{width:100vw; height: 120vh; position:absolute; top:0; left:0;}
+
+
+/* 포폴 콘텐츠 */
+.list_content{width:800vw; height: 100vh; position:absolute; top:0; left:0;}
+.list_content ul{width:100%; height:100%;}
+.list_content ul li{float:left;}
+.list_content ul li:nth-child(1){width:100vw; height:100vh;  background: url(../images/portfolio/hosigul.png) no-repeat; background-size: 120%; background-position: center;}
+.list_content ul li:nth-child(2){width:100vw; height:100vh;  background: url(../images/portfolio/clm.png) no-repeat; background-size: 120%;}
+.list_content ul li:nth-child(3){width:100vw; height:100vh;  background: url(../images/portfolio/whatsthecraic.png) no-repeat; background-size: 120%; background-position: top;}
+.list_content ul li:nth-child(4){width:100vw; height:100vh;  background: url(../images/portfolio/handok.png) no-repeat; background-size: 120%; background-position: top;}
+.list_content ul li:nth-child(5){width:100vw; height:100vh;  background: url(../images/portfolio/osakaharu.png) no-repeat; background-size: 120%; background-position: top;}
+.list_content ul li:nth-child(6){width:100vw; height:100vh;  background: url(../images/portfolio/anisample.png) no-repeat; background-size: 120%;}
+.list_content ul li:nth-child(7){width:100vw; height:100vh;  background: url(../images/portfolio/calculator.png) no-repeat; background-size: 120%; background-position: top;}
+.list_content ul li:nth-child(8){width:100vw; height:100vh;  background: url(../images/portfolio/onlinebooth.png) no-repeat; background-size: 120%; background-position: center}
+
+.list_content ul li div{width:100%; height: 100%; position:relative; background: #000000bf; }
+.list_content ul li div h3{text-align: center; padding:10vh; font-family: 'Nanum Gothic', sans-serif; color:#fff; font-size: 2em;}
+.list_content ul li div table{color:#fff; font-family: 'Nanum Gothic', sans-serif; line-height: 1.5; margin:0 auto; font-size:1em;}
+.list_content ul li div table td{padding-bottom:1vh;}
+.list_content ul li div table td:first-child{padding-right:10px; border-right: 1px dashed #fff;}
+.list_content ul li div table td:last-child{padding-left:10px;  transform: translate(-2%,0); opacity: 0;}
+.list_content ul li div p{color:#fff;  font-family: 'Nanum Gothic', sans-serif; font-size:.7em; text-align: center; margin-top:2vh}
+.list_content ul li div button{color:#fff; font-family: 'Nanum Gothic', sans-serif; background: none; border:1px solid #fff; border-radius: 10px; font-size:1.5em; padding:.4em 1em; margin:5vh auto; display: block; cursor: pointer; opacity:.8;}
+.list_content ul li .cont1 button:hover{background: #819e72; color:#fff; border:1px solid #819e72; opacity: 1;}
+.list_content ul li .cont2 button:hover{background: #4c60b1; color:#fff; border:1px solid #4c60b1; opacity: 1;}
+.list_content ul li .cont3 button:hover{background: #ff873f; color:#fff; border:1px solid #ff873f; opacity: 1;}
+.list_content ul li .cont4 button:hover{background: #5e1f77; color:#fff; border:1px solid #5e1f77; opacity: 1;}
+.list_content ul li .cont5 button:hover{background: #d11818; color:#fff; border:1px solid #d11818; opacity: 1;}
+.list_content ul li .cont6 button:hover{background: #c14c53; color:#fff; border:1px solid #c14c53; opacity: 1;}
+.list_content ul li .cont7 button:hover{background: #4fa9b0; color:#fff; border:1px solid #4fa9b0; opacity: 1;}
+.list_content ul li .cont8 button:hover{background: #384578; color:#fff; border:1px solid #384578; opacity: 1;}
+.list_content ul li div table td:last-child.on{ animation:tableAni 1s forwards;}
+
+
+@keyframes tableAni {
+	to{transform: translate(0,0); opacity: 1;}
+}
+
+
+
+/* 스와이프아이콘 */
+.swipe_icon{position: absolute; right:2%; top:40%; z-index:2; width:50px; height: 50px; opacity: 0;}
+.swipe_icon::after{content:'swipe'; color:#fff; font-family: 'Nanum Gothic', sans-serif;}
+.swipe_icon.on{ animation:swipeIcon 5s forwards;}
+.swipe_icon img{width:100%}
+
+@keyframes swipeIcon{
+	0%{transform: translate(0,0); opacity: 0;}
+	15%{transform:translate(-3vw,0);opacity: 1;}
+	30%{transform:translate(0,0)}
+	45%{transform:translate(-3vw,0)}
+	60%{transform:translate(0,0);}
+	75%{transform:translate(-3vw,0); opacity: 1;}
+	90%{transform:translate(0,0); opacity: 0;}
+}
+
+/* 네비게이션 */
+.list_page_box .nav{width:300px; height:300px; position:absolute; bottom:-50px; left:50%; transform:translate(-50%,0); border-radius:50%;}
+
+.nav_bar li {
+list-style: none;
+display: inline;
+}
+
+.nav_bar li img{width:50%; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%)}
+.nav_bar li span{font-size:1.2em; position:absolute; width:100%; text-align: center; display: block; line-height: 1.2; word-break: keep-all; top:50%; transform:translate(0,-50%)}
+
+.nav_bar {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 50px auto 50px;
+}
+.nav_bar a {
+display: block;
+position: absolute;
+top: 75px; 
+left: 75px;
+width: 150px; height: 150px;
+line-height:8px;
+margin: -97px;
+-moz-border-radius: 150px;
+-webkit-border-radius: 150px;
+border-radius: 150px;
+text-align: center;
+text-decoration: none;
+color: #fff;
+box-sizing: border-box;
+font-family: 'Nanum Gothic', sans-serif;
+cursor: pointer;
+user-select: none;
+}
+
+.nav_bar a.hosigul {background:none; opacity: .7;}
+.nav_bar a.clm{background:none; opacity: .7;}
+.nav_bar a.whatsthecaric {background:none; opacity: .7;}
+.nav_bar a.handok {background:none; opacity: .7;}
+.nav_bar a.osakaharu {background:none; opacity: .7;}
+.nav_bar a.animation {background:none; opacity: .7;}
+.nav_bar a.math {background:none; opacity: .7;}
+.nav_bar a.onlinebooth {background:none; opacity: .7;}
+
+
+
+.nav_bar a.hosigul:hover {opacity: 1.0;}
+.nav_bar a.clm:hover {opacity: 1.0;}
+.nav_bar a.whatsthecaric:hover {opacity: 1.0;}
+.nav_bar a.handok:hover {opacity: 1.0;}
+.nav_bar a.osakaharu:hover {opacity: 1.0;}
+.nav_bar a.animation:hover {opacity: 1.0;}
+.nav_bar a.math:hover {opacity: 1.0;}
+.nav_bar a.onlinebooth:hover {opacity: 1.0;}
+
+
+
+.nav_bar .hosigul { transform: rotate(270deg) translate(220px) rotate(90deg); -webkit-transform: rotate(270deg) translate(220px) rotate(90deg); -ms-transform: rotate(270deg) translate(220px) rotate(90deg);}
+.nav_bar .clm { transform: rotate(315deg) translate(220px) rotate(90deg); -webkit-transform: rotate(315deg) translate(220px) rotate(90deg); -ms-transform: rotate(315deg) translate(220px) rotate(90deg);}
+.nav_bar .whatsthecaric {transform: rotate(0deg) translate(220px) rotate(90deg); -webkit-transform: rotate(0deg) translate(220px) rotate(90deg); -ms-transform: rotate(0deg) translate(220px) rotate(90deg);}
+.nav_bar .handok{ transform: rotate(45deg) translate(220px) rotate(90deg); -webkit-transform: rotate(45deg) translate(220px) rotate(90deg); -ms-transform: rotate(45deg) translate(220px) rotate(90deg);}
+.nav_bar .osakaharu{ transform: rotate(90deg) translate(220px) rotate(90deg); -webkit-transform: rotate(90deg) translate(220px) rotate(90deg); -ms-transform: rotate(90deg) translate(220px) rotate(90deg);}
+.nav_bar .animation{ transform: rotate(135deg) translate(220px) rotate(90deg); -webkit-transform: rotate(135deg) translate(220px) rotate(90deg); -ms-transform: rotate(135deg) translate(220px) rotate(90deg);}
+.nav_bar .math { transform: rotate(180deg) translate(220px) rotate(90deg); -webkit-transform: rotate(180deg) translate(220px) rotate(90deg); -ms-transform:rotate(180deg) translate(220px) rotate(90deg);}
+.nav_bar .onlinebooth{ transform: rotate(225deg) translate(220px) rotate(90deg); -webkit-transform: rotate(225deg) translate(220px) rotate(90deg); -ms-transform: rotate(225deg) translate(220px) rotate(90deg);}
+
+
+
+@media screen and (min-width:1024px){
+	.main_page{height:100vh}
+}
+
+@media screen and (max-width:1080px){
+	.nav_bar li span{font-size:1em;}
+	.scroll{display: none;}
+}
+
+@media screen and (max-width:720px){
+	.list_page_box .nav{bottom:-150px;}
+	.list_content ul li div table{margin:0px 5%}
+}
+@media screen and (max-height:700px){
+	.list_page_box .nav{bottom:-30%}
+}
+@media screen and (min-height:701px) and (max-height:800px){
+	.list_page_box .nav{bottom:-15%}
+}
+@media screen and (min-aspect-ratio:5/4) and (max-aspect-ratio:5/3){
+	.list_content ul li:nth-child(-n+8){background-size: 160%;}
+}
+
+@media screen and (min-aspect-ratio:5/5) and (max-aspect-ratio:5/4){
+	.list_content ul li:nth-child(-n+8){background-size: 200%;}
+}
+@media screen and (min-aspect-ratio:5/6) and (max-aspect-ratio:5/5){
+	.list_content ul li:nth-child(-n+8){background-size: 250%;}
+}
+@media screen and (min-aspect-ratio:5/8) and (max-aspect-ratio:5/6){
+	.list_content ul li:nth-child(-n+8){background-size: 330%;}
+	.list_content ul li:nth-child(7){background: url(../images/portfolio/calculator2.png) no-repeat; background-size: 120%; background-origin: center;}
+}
+@media screen and (max-aspect-ratio:5/8){
+	.list_content ul li:nth-child(-n+8){background-size: 500%;}
+	.list_content ul li:nth-child(7){background: url(../images/portfolio/calculator2.png) no-repeat; background-size: 120%; background-origin: center;}
+	.list_content ul li div table{max-height: 35vh; overflow:scroll; display:block;}
+}
+
+@media screen and (max-width:282px){
+	.list_content ul li div table{max-height: 25vh;}
+	.list_page_box .nav{bottom:-200px;}
+	.list_content ul li div h3{font-size:1.2em}
+}

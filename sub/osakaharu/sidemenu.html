@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오사카하루-사이드메뉴</title>
+    <link rel="stylesheet" type="text/css" href="css/best_food.css">
+    <link rel="shortcut icon" href="images/pavicon.ico">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".first_list li:eq(0)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(0)").addClass("fix");
+            $(".big_img li:eq(0)").removeClass("none");
+        })
+        $(".first_list li:eq(1)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(1)").addClass("fix");
+            $(".big_img li:eq(1)").removeClass("none");
+        })
+         $(".first_list li:eq(2)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(2)").addClass("fix");
+            $(".big_img li:eq(2)").removeClass("none");
+        })
+         
+        
+        
+        
+    })
+        
+        function prev(){
+            $(".first_list").show();
+            $(".second_list").hide();
+        }
+        
+        function next(){
+            $(".second_list").show();
+            $(".first_list").hide();
+        }
+    
+    
+        function btn_menu(){
+            $(".header").animate({width:"100%"},"slow");
+            $(".btn_menu").hide();
+            $(".btn_close").show();
+            $(".header ul").show();
+        };
+        
+        function btn_close(){
+            $(".header").animate({width:"0%"},"slow");
+            $(".btn_close").hide();
+            $(".btn_menu").show();
+            $(".header ul").hide();
+        }
+    
+    
+        
+    </script>
+    
+</head>
+<body>
+   <button type="button" onclick="btn_menu()" class="btn_menu"></button>
+  <button type="button" onclick="btn_close()" class="btn_close"></button>
+   <div class="header">
+       <ul>
+           <li><a href="yakiniku.html">야끼니꾸<span class="bar"></span></a></li>
+           <li><a href="best_food.html">일품요리<span class="bar"></span></a></li>
+           <li><a href="dinner.html">식사<span class="bar"></span></a></li>
+           <li><a href="sidemenu.html">사이드메뉴<span class="bar"></span></a></li>
+           <li><a href="wine.html">와인 및 주류<span class="bar"></span></a></li>
+       </ul>
+   </div>
+   <div class="content">
+       <div class="big_img">
+         <ul>
+             
+             
+<li class="fix"><img src="images/best_food/kurogoma_mozzi.jpg" alt="쿠로고마 모찌리도후"><dl>
+                 <dt><span class="big_left">쿠로고마 모찌리도후</span><span class="big_right">12000원</span></dt>
+                 <dd>필라델피아 치즈로 만들어 흑임자를 넣어 더욱 맛있는 일본식 디저트</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/mozzi.jpg" alt="모찌리도후"><dl>
+                 <dt><span class="big_left">모찌리도후</span><span class="big_right">8500원</span></dt>
+                 <dd>떡,치즈같은 식감의 두부를 닮은 생크림과 우유로 만든 디저트</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/amagurmi.jpg" alt="아마구르미"><dl>
+                 <dt><span class="big_left">아마구르미</span><span class="big_right">9000원</span></dt>
+                 <dd>호두 숙성 튀김</dd>
+             </dl></li>
+             
+             
+         </ul>
+       </div>
+       <div class="list">
+          <ul class="first_list">
+             <li><span class="li_blackbox"></span><span class="li_txt2">쿠로고마<br>모찌리도후</span><img src="images/best_food/kurogoma_mozzi.jpg" alt="쿠로고마 모찌리도후"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt">모찌리도후</span><img src="images/best_food/mozzi.jpg" alt="카라쿠치 라멘"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt2">아마구르미</span><img src="images/best_food/amagurmi.jpg" alt="아마구르미"></li>
+              </ul>
+
+       </div><!--list-->
+       
+    <div class="go_home">
+      <a href="index.html" class="go_home">홈페이지로 가기</a>
+      </div>
+      </div><!--content-->
+</body>
+</html>
+

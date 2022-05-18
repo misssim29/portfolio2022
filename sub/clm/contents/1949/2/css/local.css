@@ -1,0 +1,38 @@
+@charset "utf-8";
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+button{border:none; background: none}
+button:focus{outline: none}
+.wrap{position:relative; width: 1024px; height: 768px; overflow: hidden; margin: 0 auto; background-color: #e0f1f0;}
+.bg{width:100%; height: 100%; background: url(../images/bg.png) no-repeat; background-size: 100%; }
+
+.btns{width:756px; height: 47px; position: absolute; top:18px; left:202px;}
+.btns ul li{float: left; width:124px; height: 47px; margin:0 1px}
+.btns ul li a{display: block; cursor: pointer; width:100%; height: 100%;}
+.btns ul li:nth-child(1){background: url(../images/goto1_on.png) no-repeat; background-size: 100%}
+.btns ul li:nth-child(2){background: url(../images/goto2.png) no-repeat; background-size: 100%}
+.btns ul li:nth-child(3){background: url(../images/goto3.png) no-repeat; background-size: 100%}
+.btns ul li:nth-child(4){background: url(../images/goto4.png) no-repeat; background-size: 100%}
+.btns ul li:nth-child(5){background: url(../images/goto5.png) no-repeat; background-size: 100%}
+.btns ul li:nth-child(6){background: url(../images/goto6.png) no-repeat; background-size: 100%}
+
+.home{width:21px; height: 22px; bottom:19px; left:66px; position:absolute; cursor: pointer;}
+.home img{width: 100%}
+.btn_footnote{bottom:8px; left:118px; width:129px; height:37px; background: url(../images/btn_footnote.png) no-repeat; background-size: 100%; position: absolute; cursor: pointer; z-index: 3}
+.btn_footnote.on{background: url(../images/btn_footnote_on.png) no-repeat; background-size: 100%}
+
+
+.popup{background: rgba(0,0,0,0.3); position:absolute; top:0; left:0; width:100%; height:100%; display: none; z-index: 2}
+.footnote{width:881px; position:absolute; bottom:49px; left:71px; z-index: 5}
+
+.content{width:100%; position: absolute; top:0; left:0;}
+
+.graph{width:218px; height:224px; position:absolute; top:339px; left:181px; z-index: 1; overflow: hidden;}
+.graph img{width:218px; height: 224px; position:absolute; top:-338px}
+
+
+.btn24, .btn24_on{width:440px; height: 363px; position:absolute; top:258px; left:463px; transition: .3s all;}
+.btn24{cursor: pointer; transform: scaleX(1); transform: scaleX(1)}
+.btn24_on{transform: scaleX(0)}
+.btn24.on{transform: scaleX(0)}
+.btn24_on.on{transform: scaleX(1)}

@@ -1,0 +1,48 @@
+@charset "utf-8";
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+button{border:none;}
+button:focus{outline: none;}
+.wrap{position:relative; width: 1024px; height: 1700px; overflow: hidden; margin: 0 auto; background: url(../images/bg.jpg) no-repeat; background-size:100%;}
+
+
+.title{width:928px; position:absolute; top:28px; left:0;}
+.title > img{width:928px; margin-top:10px; opacity: 0;}
+
+
+.btn_summary{width:60px; position:absolute; bottom:20px; right:232px; cursor: pointer;}
+.btn_footnote{width:60px; position:absolute; bottom:20px; right:164px; cursor: pointer; z-index: 5}
+.btn_home{width:96px; position: absolute; top:0; right:0; cursor: pointer;}
+.btn_data{width:60px; position: absolute; bottom:20px; right:296px; cursor: pointer;}
+.btn_ace{width:92px; position:absolute; right:0; top:96px; cursor: pointer;}
+
+.footnote{width:100%; z-index: 4; position:absolute; top:0; left:0; display: none;}
+
+.graph img{width:245px; height: 155px;}
+.graph > div{position:absolute; overflow: hidden; width:0; height: 155px}
+.graph1{top:310px; left:82px}
+.graph2{top:310px; left:386px}
+.graph3{top:310px; left:709px}
+.graph4{top:503px; left:82px}
+.graph5{top:503px; left:386px}
+.graph6{top:503px; left:709px}
+
+.arrow{width:10px; height:0px; position:absolute; left:538px; top:441px; overflow: hidden; z-index: 2}
+.arrow img{width:10px; height: 134px;}
+
+
+.imp1{width:186px; position:absolute; top:552px; left:425px; opacity: 0;}
+.imp2{width:186px; position:absolute; top:552px; left:800px; opacity: 0;}
+.imp3{width:166px; position:absolute; top:842px; left:414px; opacity: 0; cursor: pointer;}
+
+.click1{width:48px; position:absolute; top:404px; left:617px; opacity: 0;}
+.click1.on{animation: Ani 1s infinite}
+.click2{width:48px; position: absolute; top:938px; left:538px; opacity: 0;}
+.click2.on{animation: Ani 1s infinite}
+@keyframes Ani{
+    0%{transform:scale(1)}
+    50%{transform: scale(1.2)}
+    100%{transform: scale(1)}
+}
+
+.goto1{width:190px; height: 50px; position:absolute; top:390px; left:450px; cursor: pointer;}

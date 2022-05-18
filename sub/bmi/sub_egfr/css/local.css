@@ -1,0 +1,180 @@
+@charset "utf-8";
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+
+/*
+Reset
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button:focus{outline: none;}
+input[type=text]::-ms-clear{
+	display: none;
+}
+
+/*mark up*/
+
+body{width:100%; height: 100vh; background: #ffffff;}
+.wrap{background: repeating-linear-gradient(45deg, #eaf0f9, #eaf0f9 1px, #fff 0, #fff 20px); width:100%; min-height:100vh; max-width:850px; margin: 0 auto; position: relative;}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+	width: 3px;		/* 세로 스크롤바 넓이 */
+	height: 5px;		/* 가로 스크롤바 넓이 */
+  }
+  ::-webkit-scrollbar-track {
+	background-color: lightblue;
+  }
+  ::-webkit-scrollbar-track-piece {
+	background-color:#ececec;		/*스크롤바 배경색 */
+  }
+  ::-webkit-scrollbar-thumb {
+	border-radius: 0px;			/*스크롤바 모서리 라운딩 */
+	background-color:#8a8a8a;		/*스크롤바 색 */
+  }
+  ::-webkit-scrollbar-button {
+	background-color: darkblue;
+	width: 10px;				/* 가로스크롤바  이동버튼 넓이*/
+	height: 10px;				/* 세로스크롤바 이동버튼  넓이*/
+  }
+  ::-webkit-scrollbar-button:start {
+	background-color: red; /* Top, Left 방향의 이동버튼 */
+  }
+  ::-webkit-scrollbar-button:end {
+	background-color: orange; /* Bottom, Right 방향의 이동버튼 */
+  }
+  ::-webkit-scrollbar-button:vertical:increment {
+  }
+  ::-webkit-scrollbar-button:vertical:decrement {
+  }
+  ::-webkit-scrollbar-corner {
+	background-color: violet; /* 우측 하단의 코너 부분 */
+  }
+  ::-webkit-resizer {
+	background-color:#aaa;
+  }
+  
+/*nav*/
+.nav{background: #dcdddd; height: 9vw; max-height: 76px;}
+.nav button{float:left; cursor: pointer;}
+.nav button img{vertical-align: top; width:100%;}
+.btn_home{width:9.8%;}
+.btn1{width:30%; height:9vw; max-height: 76px; font-size:0px; background: url(../images/btn1.png) no-repeat; background-size: 100%;}
+.btn1.on{background: url(../images/btn1_on.png) no-repeat; background-size: 100%;}
+.btn2{width:30%; height:9vw; max-height: 76px; font-size:0px; background: url(../images/btn2.png) no-repeat; background-size: 100%; margin-right:0.2%}
+.btn2.on{background: url(../images/btn2_on.png) no-repeat; background-size: 100%;}
+.btn3{width:30%; height:9vw; max-height: 76px; font-size:0px; background: url(../images/btn3.png) no-repeat; background-size: 100%;}
+.btn3.on{background: url(../images/btn3_on.png) no-repeat; background-size: 100%;}
+
+
+/**********cont1*********/
+/*title*/
+/*.cont1 .title{width:80%; display: block; margin: 30px auto;}*/
+.cont1 .title{font-size:1.6em; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; width:100%; text-align: center; color:#589235; margin: 30px auto;}
+.cont1 .step{width:90%; margin: 0 auto; display: block;}
+
+/*form*/
+.cont1 .form{width:90%; margin: 30px auto;}
+.cont1 .form::after{content:''; display: block; clear:both;}
+.cont1 .form > div{float:left;}
+.cont1 .mgdl{background: #f9f4d3; width:30%; padding-bottom: 30px; max-height:120px; height:16vw}
+.cont1 .mgdl h2{color:#e4b000; font-family: 'Noto Sans KR', sans-serif; line-height: 3; font-size: 1.5em; letter-spacing: -1px; font-weight: bold; text-align: center;}
+.cont1 .mgdl .txt{background: #ffffff; padding:3px; border-radius:30px; box-shadow: inset 2px 2px 2px #94908f; width:80%; line-height: 2; margin: 0 auto; position: relative;}
+.cont1 .mgdl input[type="text"]{background: none; margin: 0 auto; display: block; font-size:1.5em; width:100%; text-align: center; line-height: 1;}
+.cont1 .mgdl span{position: absolute; bottom:0; right:6%; font-family: 'Noto Sans KR', sans-serif; font-size:14px}
+
+.cont1 .age{background: #eef3d8; width:30%; padding-bottom: 30px; margin:0 5%; position: relative; max-height:120px; height:16vw}
+.cont1 .age h2{color:#85a43f; font-family: 'Noto Sans KR', sans-serif; line-height: 3; font-size: 1.5em; letter-spacing: -1px; font-weight: bold; text-align: center;}
+.cont1 .age .txt{background: #ffffff; padding:3px; border-radius:30px; box-shadow: inset 2px 2px 2px #94908f; width:80%; line-height: 2; margin: 0 auto; position: relative;}
+.cont1 .age input[type="text"]{background: none; margin: 0 auto; display: block; font-size:1.5em; width:100%; text-align: center; line-height: 1;}
+.cont1 .age span{position: absolute; bottom:6px; font-family: 'Noto Sans KR', sans-serif; font-size:14px; color:#000; left:10%}
+
+.cont1 .gender{background: #eef2e4; width:30%; padding-bottom: 30px;  position: relative; max-height:120px; height:16vw}
+.cont1 .gender h2{color:#85a43f; font-family: 'Noto Sans KR', sans-serif; line-height: 3; font-size: 1.5em; letter-spacing: -1px; font-weight: bold; text-align: center; margin-bottom:10px}
+.cont1 .gender input[type="radio"]{display:none;}
+.cont1 .gender > div{float:left; width:50%; text-align: center;}
+.cont1 .gender label{font-family: 'Noto Sans KR', sans-serif;}
+.cont1 .male span{content:''; background: url(../images/checkbox.png) no-repeat; background-size: 100%; width:25%; height:30px; clear:both; display: inline-block; vertical-align: middle; margin-right:5%}
+.cont1 .male span.on{background:url(../images/checkbox_check.png) no-repeat; background-size: 100%; font-family: 'Noto Sans KR', sans-serif;}
+.cont1 .female span{content:''; background: url(../images/checkbox.png) no-repeat; background-size: 100%; width:25%; height:30px; clear:both; display: inline-block; vertical-align: middle; margin-right:5%}
+.cont1 .female span.on{background:url(../images/checkbox_check.png) no-repeat; background-size: 100%; font-family: 'Noto Sans KR', sans-serif;}
+
+/*result*/
+
+.cont1 .result{background: #90bd20; width:50%; height:150px; margin:30px auto; border-radius:20px; padding:20px}
+.cont1 .result button{color:#ffffff; background: #5c9621; line-height: 3; font-family: 'Noto Sans KR', sans-serif; font-weight: bold; font-size:1.5em; width:90%; margin:0 auto; display: block; border-radius:100px; box-shadow:inset -5px -5px 10px #446d18; border:3px solid #5c9621; cursor: pointer;}
+.cont1 .gfr_result{width:90%; background: #ffffff; height: 50px; position: relative; border-radius: 10px; margin: 15px auto;}
+.cont1 .gfr_result .m2{ position: absolute; right:3%; top:50%; transform: translate(0,-50%); font-size: 15px; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px;}
+.cont1 .gfr_result sup{vertical-align: super; font-size:10px}
+.cont1 .gfr_result .txt{font-size: 2em; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; text-align: center; display: inline-block; width:90%; line-height: 1.5; color:#e8404a; font-weight: bold;}
+
+.ref{font-size:10px; margin-bottom:30px; display: block; line-height: 3; text-indent:7%;}
+
+/**********cont2*********/
+.cont2{display: none; padding-bottom:50px}
+.cont2 .content{background: #f0f5e3; width:90%; margin: 0 auto; margin-top:50px; border-radius: 10px; position: relative;}
+.cont2 .dot_start{width:6%; position: absolute; top:-3%; left:3%; z-index: 3}
+.cont2 .dot_end{width:6%; position: absolute; bottom:-3%; right:3%; z-index: 3;}
+.cont2 .content h2{text-align: center; color:#4b4948; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; font-size:2em; display: block; padding-top:40px; font-weight: bold;}
+.cont2 .content .txt1{color:#e8404a; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; font-size:2em; display: block; font-weight: bold; width:80%; text-align: center; margin: 40px auto; background: #ffffff; line-height: 1.5; border-radius:100px;  box-shadow: inset 2px 2px 2px #94908f; padding:3%; word-break:keep-all}
+.cont2 .content .txt2{color:#e8404a; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; font-size:2em; display: block; font-weight: bold; width:80%; text-align: center; margin: 40px auto; background: #ffffff; line-height: 1.5; border-radius:100px;  box-shadow: inset 2px 2px 2px #94908f; padding:3%; word-break:keep-all}
+.cont2 .content .txt2::after{content:''; display: block; clear:both;}
+.cont2 .content .box{height: 30px}
+
+/**********cont3*********/
+.cont3{display: none; padding-bottom:30px}
+.cont3 img{width:90%; margin:30px auto; display: block;}
+
+@media screen and (max-width:750px){
+    .cont1 .form h2{font-size:1em;}
+    .cont1 .form span{font-size:9px}
+    .cont1 .gfr_result .m2{  font-size: 12px;}
+    .cont2 .content .txt1, .cont2 .content .txt2{
+        font-size:1.2em
+    }
+}
+
+@media screen and (max-width:360px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

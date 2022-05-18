@@ -1,0 +1,69 @@
+@charset "utf-8";
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+button{border:none; background: none}
+button:focus{outline: none}
+.wrap{position:relative; width: 1024px; height: 768px; overflow: hidden; margin: 0 auto; background: url(../images/bg.jpg) no-repeat; background-size:100%;}
+
+
+/* content */
+.content{width:100%;}
+.content .title{width:100%; position:absolute; left:0; opacity: 0; top:0;}
+.content .cont{width:532px; left:255px; top:172px; position:absolute;}
+.content .cont img{width:100%; position:absolute;}
+.content .cont_bg{transform: scale(0);}
+.content .cont_bg.on{animation:Ani 1s forwards; }
+.imp1, .imp2, .imp3, .imp4{opacity: 0;}
+
+@keyframes Ani {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+/* footer */
+.footer{height: 75px; width:100%; background: #ffffff; position:absolute; bottom:0; left:0; box-shadow:0px -1px 10px rgba(0,0,0,0.2);}
+.nav button{width:75px; height: 65px; position:absolute; bottom:0; cursor:pointer;}
+.nav .nav1{left:45px}
+.nav .nav1.off{background: url(../images/nav1.jpg) no-repeat; background-size: 100%;}
+.nav .nav1.on{background: url(../images/nav1_on.jpg) no-repeat; background-size: 100%;}
+.nav .nav2{left:134px;}
+.nav .nav2.off{background: url(../images/nav2.jpg) no-repeat; background-size: 100%;}
+.nav .nav2.on{background: url(../images/nav2_on.jpg) no-repeat; background-size: 100%;}
+.nav .nav3{left:219px;}
+.nav .nav3.off{background: url(../images/nav3.jpg) no-repeat; background-size: 100%;}
+.nav .nav3.on{background: url(../images/nav3_on.jpg) no-repeat; background-size: 100%;}
+.nav .nav4{left:297px;}
+.nav .nav4.off{background: url(../images/nav4.jpg) no-repeat; background-size: 100%;}
+.nav .nav4.on{background: url(../images/nav4_on.jpg) no-repeat; background-size: 100%;}
+.nav .nav5{width:112px; left:377px;}
+.nav .nav5.off{background: url(../images/nav5.jpg) no-repeat; background-size: 100%;}
+.nav .nav5.on{background: url(../images/nav5_on.jpg) no-repeat; background-size: 100%;}
+
+.btns button{width:47px; height: 65px; position:absolute; bottom:0; cursor: pointer;}
+.btns button .on{width:100%; display: none;}
+.btn_isi{right:208px; background: url(../images/btn_isi.jpg) no-repeat; background-size: 100%;}
+.btn_pi{right:161px; background: url(../images/btn_pi.jpg) no-repeat; background-size: 100%;}
+.btn_ts{right:114px; background: url(../images/btn_ts.jpg) no-repeat; background-size: 100%;}
+.btn_ref{right:67px; background: url(../images/btn_ref.jpg) no-repeat; background-size: 100%;}
+.btn_def{right:20px; background: url(../images/btn_def.jpg) no-repeat; background-size: 100%;}
+
+/* popup */
+.popup{width:100%; background: url(../images/popup.png) no-repeat; height: 692px; background-size: 100%; position:absolute; top:0; left:0; display: none;}
+.popup .close{width:50px; height: 50px; position:absolute; right:30px; top:25px; cursor: pointer;}
+.popup > div{display: none;}
+
+.isi a{display: block;}
+.isi img{width:100%}
+.isi .isi_btn1{width:239px; position:absolute; bottom:50px; left:433px; cursor:pointer;}
+.isi .isi_btn2{width:239px; position:absolute; bottom:50px; left:693px; cursor:pointer;}
+
+.pi{width:975px; height:590px; overflow-y:scroll; position: absolute; top:58px;}
+.pi img{width:100%}
+.ts{width:975px; height:590px; overflow-y:scroll; position: absolute; top:58px;}
+.ts img{width:100%}
+.ref{width:975px; height:590px; overflow-y:scroll; position: absolute; top:58px;}
+.ref img{width:100%}
+.def{width:975px; height:590px; overflow-y:scroll; position: absolute; top:58px;}
+.def img{width:100%}
+
+.palagon{width:27px; position:absolute; bottom:0; right:220px;}

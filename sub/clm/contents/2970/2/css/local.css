@@ -1,0 +1,213 @@
+@charset "utf-8";
+/*user agent stylesheet- margin: 8px*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1024px;
+    height: 768px;
+    background: url(../images/bg.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.bottom_btn {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    left: 35px;
+    width: 135px;
+    height: 35px;
+}
+.bottom_btn li {
+    width: 33%;
+}
+li.btn_foot.on {
+    background: url(../images/btn_foot_on.png) no-repeat 0 0;
+    background-size: 100%;
+    width: 38px;
+    height: 33px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+    z-index: 100;
+}
+
+/* cont */
+.graph1 {
+    position: absolute;
+    left: 234px;
+    top: 74px;
+    width: 0px;
+    overflow: hidden;
+}
+.graph2 {
+    position: absolute;
+    left: 234px;
+    top: 107px;
+    width: 0px;
+    overflow: hidden;
+}
+
+.cont_wrap {
+    width: 630px;
+    height: 1000px;
+    position: absolute;
+    left: 299px;
+    top: 319px;
+}
+.icon_wrap {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    overflow: hidden;
+}
+.bar_b {
+    position: absolute;
+    left: 0px;
+    top: 190px;
+}
+.bar_red {
+    position: absolute;
+    left: 0px;
+    top: 190px;
+    width: 0px;
+    overflow: hidden;
+}
+#scroll {
+}
+
+#slider_h {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    background: none;
+    width: 630px;
+    height: 7px;
+    position: absolute;
+    left: 0px;
+    top: 200px;
+}
+#slider_h::-webkit-slider-thumb {
+    /* 기본thumb blue */
+    -webkit-appearance: none;
+    appearance: none;
+    background: red;
+    opacity: 0;
+    width: 130px;
+    height: 60px;
+    cursor: pointer;
+
+    z-index: 3;
+    position: relative;
+    left: 0px;
+}
+
+#scroll {
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    left: 0px;
+    top: 175px;
+    z-index: 2;
+}
+.scrollBtn {
+    width: 56px;
+    height: 55px;
+    position: absolute;
+
+    left: -20px;
+    background: url(../images/scroll.png) no-repeat 0 0;
+    background-size: 100%;
+}
+
+.result {
+    position: absolute;
+    right: 30px;
+    bottom: 120px;
+    width: 200px;
+    height: 60px;
+}
+
+/* gnb */
+.gnb {
+    width: 180px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+}
+.gnb > .menu {
+    width: 180px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+}
+.gnb > .menu2 {
+    top: 245px;
+}
+.gnb > .menu3 {
+    top: 295px;
+}
+.gnb > .menu4 {
+    top: 345px;
+}
+.gnb > .menu5 {
+    top: 395px;
+}
+.gnb > .menu6 {
+    top: 450px;
+}
+/* menu1 - sub */
+.gnb > .menu1 > .menu1_sub {
+    width: 180px;
+    height: 190px;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.gnb > .menu1 > .menu1_sub > li {
+    height: 20%;
+}
+
+/* send */
+.sendEmail {
+    position: absolute;
+    bottom: 50px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+}
+
+/* popup */
+.foot {
+    width: 1024px;
+    height: 768px;
+    background: url(../images/foot.png) no-repeat 0 0;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 100;
+}
+.foot > .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 70px;
+    top: 335px;
+}

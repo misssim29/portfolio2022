@@ -1,0 +1,29 @@
+@charset "utf-8";
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+*{margin: 0; padding: 0; text-decoration: none; list-style: none;}
+*:focus{outline: none}
+button{border:none; background: none; cursor: pointer;}
+.wrap{position:relative; width: 1024px; height: 768px; overflow: hidden; margin: 0 auto; background: url(../images/bg.jpg) no-repeat; background-size:100%;}
+
+.content{width:100%; height:708px;}
+.cont{width:843px; height:285px; background: url(../images/cont.png) no-repeat; position:absolute; top:286px; left:91px; background-size: 100%;}
+.cont_img{width:315px; position:absolute; bottom:67px; right:0; z-index: 1;}
+.cont form{z-index: 5;}
+.cont textarea{width:100%; font-size:20px; color:#444; box-sizing:border-box; height:280px; padding:20px; border:none; background: none; resize: none;}
+
+.footer{width:100%; height:60px; position:relative;}
+.footer button{position:absolute;}
+.home{background: url(../images/btn_home.png) no-repeat; background-size: 100%; width:18px; height:27px; top:20px; left:68px;}
+.btn_pi{background: url(../images/btn_pi.png) no-repeat; background-size: 100%; width:18px; height:27px;  top:20px; left:118px;}
+.btn_sd{background: url(../images/btn_sd.png) no-repeat; background-size: 100%; width:95px; height:27px; top:20px; left:177px;}
+.btn_fn{background: url(../images/btn_fn.png) no-repeat; background-size: 100%; width:95px; height:27px; top:20px; left:286px;}
+.btn_ref{background: url(../images/btn_ref.png) no-repeat; background-size: 100%; width:95px; height:27px; top:20px; left:394px;}
+
+.popup{position:absolute; left:0; background: rgba(0,0,0,0.3); width:100%; height:708px; display: none; bottom:60px; z-index: 10}
+.popup img{position:absolute; opacity: 0}
+.pi{left:50%; top:178px; transform: translate(-50%); width:858px}
+.footnote{bottom:-20px; width:100%}
+.ref{bottom:-20px; width:100%}
+.sd{bottom:-20px; width:100%}
+
+.feedback{background: url(../images/btn_feedback.png) no-repeat; background-size: 100%; width:123px; height:44px; position:absolute; bottom:110px; left:91px; display: none;}

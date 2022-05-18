@@ -1,0 +1,51 @@
+@charset "utf-8";
+*{padding:0; margin:0;}
+*{-webkit-tap-highlight-color : rgba(0,0,0,0);}
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+button:focus{outline: none;}
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; overflow: hidden; background: url(../images/bg.jpg) no-repeat; background-size: 100%;}
+img{width: 100%;}
+button{background: none; border:none; cursor: pointer;}
+
+.btn_home{width:42px; position:absolute; bottom:82px; right:80px;}
+.btn_pi{width:42px; position:absolute; bottom:82px; right:20px;}
+
+.txt{width:100%; background: url(../images/txt.png) no-repeat; background-size: 100%; height: 288px; position:absolute; top:206px; left:0;}
+
+.txt .box{background: url(../images/txt_box.png) no-repeat; width:157px; height: 67px; background-size: 100%; position:absolute; left:551px; top:201px;}
+
+.txt .response{width:100%; opacity: 0;}
+.zoom{width:62px; position:absolute; left:683px; top:247px; cursor: pointer;}
+.zoom.on{animation: Ani-S 1s linear infinite}
+.wheel{width:50px; position: absolute; left:528px; top:179px; animation: Ani-R 2s linear infinite}
+
+
+@keyframes Ani-R{
+    from{transform: rotate(0)}
+    to{transform: rotate(360deg)}
+}
+
+@keyframes Ani-S{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1)}
+}
+
+
+.popup{background: url(../images/popup.png) no-repeat; position:absolute; width:100%; height: 720px; background-size: 100%; bottom:0; left:0; display: none;}
+.popup img{width:127px; position:absolute; top:56px; left:38px; animation: Ani-R 1s linear infinite}
+
+
+.btn_g{width:35px; height: 35px; position:absolute; top:80px; right:228px;}
+.btn_y{width:35px; height: 35px; position:absolute; top:80px; right:178px;}
+.btn_r{width:35px; height: 35px; position:absolute; top:80px; right:129px;}
+
+
