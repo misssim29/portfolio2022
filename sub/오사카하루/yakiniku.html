@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오사카하루-야끼니꾸</title>
+    <link rel="stylesheet" type="text/css" href="css/yakiniku.css">
+    <link rel="shortcut icon" href="images/pavicon.ico">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".first_list li:eq(0)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(0)").addClass("fix");
+            $(".big_img li:eq(0)").removeClass("none");
+        })
+        $(".first_list li:eq(1)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(1)").addClass("fix");
+            $(".big_img li:eq(1)").removeClass("none");
+        })
+         $(".first_list li:eq(2)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(2)").addClass("fix");
+            $(".big_img li:eq(2)").removeClass("none");
+        })
+         $(".first_list li:eq(3)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(3)").addClass("fix");
+            $(".big_img li:eq(3)").removeClass("none");
+        })
+         $(".first_list li:eq(4)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(4)").addClass("fix");
+            $(".big_img li:eq(4)").removeClass("none");
+        })
+         $(".first_list li:eq(5)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(5)").addClass("fix");
+            $(".big_img li:eq(5)").removeClass("none");
+        })
+         $(".first_list li:eq(6)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(6)").addClass("fix");
+            $(".big_img li:eq(6)").removeClass("none");
+        })
+         $(".first_list li:eq(7)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(7)").addClass("fix");
+            $(".big_img li:eq(7)").removeClass("none");
+        })
+         $(".first_list li:eq(8)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(8)").addClass("fix");
+            $(".big_img li:eq(8)").removeClass("none");
+        })
+         $(".first_list li:eq(9)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(9)").addClass("fix");
+            $(".big_img li:eq(9)").removeClass("none");
+        })
+        
+        $(".second_list li:eq(0)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:last").addClass("fix");
+            $(".big_img li:last").removeClass("none");
+        })
+        
+    })
+        
+        function prev(){
+            $(".first_list").show();
+            $(".second_list").hide();
+        }
+        
+        function next(){
+            $(".second_list").show();
+            $(".first_list").hide();
+        }
+        
+        function btn_menu(){
+            $(".header").animate({width:"100%"},"slow");
+            $(".btn_menu").hide();
+            $(".btn_close").show();
+            $(".header ul").show();
+        };
+        
+        function btn_close(){
+            $(".header").animate({width:"0%"},"slow");
+            $(".btn_close").hide();
+            $(".btn_menu").show();
+            $(".header ul").hide();
+        }
+    
+    </script>
+    
+</head>
+<body>
+  <button type="button" onclick="btn_menu()" class="btn_menu"></button>
+  <button type="button" onclick="btn_close()" class="btn_close"></button>
+   <div class="header">
+       <ul>
+           <li><a href="yakiniku.html">야끼니꾸<span class="bar"></span></a></li>
+           <li><a href="best_food.html">일품요리<span class="bar"></span></a></li>
+           <li><a href="dinner.html">식사<span class="bar"></span></a></li>
+           <li><a href="sidemenu.html">사이드메뉴<span class="bar"></span></a></li>
+           <li><a href="wine.html">와인 및 주류<span class="bar"></span></a></li>
+       </ul>
+   </div>
+   <div class="content">
+       <div class="big_img">
+         <ul>
+             <li class="fix"><img src="images/yakiniku/bucha.jpg" alt="부채살"><dl>
+                 <dt><span class="big_left">부채살 ( みすじ | 미스지 )</span><span class="big_right">80g / 9000원</span></dt>
+                 <dd>어깨뼈가 부채 모양으로 생겼기 때문에 ‘부채살’이라고 하며, ‘슬라이스한 모습이 마치 낙엽 같다고 해서 ’낙엽살’이라 부르기도 한다.
+맛이 담백하고 쫄깃하며 육즙이 풍부한 것이 특징이다.</dd>
+             </dl>
+             </li>
+             <li class="none"> <img src="images/yakiniku/king.jpg" alt="황제늑간"><dl>
+                 <dt><span class="big_left">황제늑간 ( カイノミ | 카이노미 )</span><span class="big_right">80g / 11000원</span></dt>
+                 <dd>갈비부위의 양쪽 끝에 있는 척추와 가슴 부위로 소 한마리에서 600g정도 나와 황제늑간이라 한다.</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/anchang.jpeg" alt="안창살"><dl>
+                 <dt><span class="big_left">안창살 (ハラミ | 하라미 )</span><span class="big_right">80g / 13500원</span></dt>
+                 <dd>갈비뼈 7번과 13번 사이 안쪽에 붙어 있는 두꺼운 횡경막 부위로 토시살과 함께 내장을 붙들고 있는 근육으로
+쫄깃하게 씹히는 촉감과 독특한 단맛을 가지고 있으며, 담백하고 육즙이 풍부한 것이 특징이다. </dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/usal.jpeg" alt="우설"><dl>
+                 <dt><span class="big_left">우설 ( 牛タン | 규탄 )</span><span class="big_right">80g / 14500원</span></dt>
+                 <dd>약 1.2kg~1.5kg으로 단백질의 함량이 높고 비타민이나 철분을 많이 함유. 지방이 적어 다이어트에 적합하며 육질이 연하고 담백하다.</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/jingalbi.jpg" alt="진갈비"><dl>
+                 <dt><span class="big_left">진갈비 (꽃살) ( かルビ | 카루비 )</span><span class="big_right">80g / 17500원</span></dt>
+                 <dd>제6갈비뼈 ~ 제8갈비뼈 부위의 고기로, 운동량이 거의 없는 근육들로 구성되어 근내지방의 축적이 매우 잘 이루어진 환상적인 마블링을 자랑.</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/upzinsal.jpg" alt="업진살"><dl>
+                 <dt><span class="big_left">업진살 (中落ちカルビ | 소뱃살)</span><span class="big_right">80g / 19500원</span></dt>
+                 <dd>업진살은 소가 엎드렸을 때 바닥에 닿는 뱃살로 질기지 않고 근육 사이의 근간지방이 많아 구워 먹으면 풍미와 육즙이 매우 좋다.</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/special_woosal.jpg" alt="특상우설"><dl>
+                 <dt><span class="big_left">특상우설 ( 上牛タン | 죠우규탄 )</span><span class="big_right">6pc / 22500원</span></dt>
+                 <dd>우설중에서 엄선한 특상부위</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/chamgalbi.jpg" alt="참갈비"><dl>
+                 <dt><span class="big_left">참갈비살 ( ともさんかく | 토모상카쿠)</span><span class="big_right">80g / 25500원</span></dt>
+                 <dd>제9갈비뼈에서 제13갈비뼈까지의 부위로, 전체적인 고기의 맛은 꽃등심과 양지의 중간 정도이다.</dd>
+             </dl></li>
+             <li class="none"><img src="images/yakiniku/ansim.jpg" alt="안심"><dl>
+                 <dt><span class="big_left">안심 ( テンダーロイン | 텐더로인 )</span><span class="big_right">80g / 26500원</span></dt>
+                 <dd> 쇠고기 중 가장 부드럽고 연하며 지방이 적고 담백하며 맛이 좋아 최고급으로 취급되는 부위. </dd>
+             </dl></li>
+<li class="none"><img src="images/yakiniku/salchi.jpg" alt="살치살"><dl>
+                 <dt><span class="big_left">살치살 ( ハネシタ | 하네시타 )</span><span class="big_right">80g / 28500원</span></dt>
+                 <dd>등심살의 일부로 최상급인 꽃등심을 얻기 위해 갈비와 분리한 살코기이며, 마블링이 가장 좋고 구이용으로는 최고의 부위.</dd>
+             </dl></li>
+         </ul>
+       </div>
+       <div class="list">
+          <ul class="first_list">
+             <li><span class="li_blackbox"></span><span class="li_txt">부채살</span><img src="images/yakiniku/bucha.jpg" alt="부채살"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">황제늑간</span><img src="images/yakiniku/king.jpg" alt="황제늑간"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">안창살</span><img src="images/yakiniku/anchang.jpeg" alt="안창살"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">우설</span><img src="images/yakiniku/usal.jpeg" alt="우설"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">진갈비</span><img src="images/yakiniku/jingalbi.jpg" alt="진갈비"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">업진살</span><img src="images/yakiniku/upzinsal.jpg" alt="업진살"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt">특상우설</span><img src="images/yakiniku/special_woosal.jpg" alt="특상우설"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt">참갈비</span><img src="images/yakiniku/chamgalbi.jpg" alt="참갈비"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt">안심</span><img src="images/yakiniku/ansim.jpg" alt="안심"></li>
+              </ul>
+              <ul class="second_list">
+              <li><span class="li_blackbox"></span><span class="li_txt">살치살</span><img src="images/yakiniku/salchi.jpg" alt="살치살"></li>
+           </ul>
+           <button type="button" onclick="prev()" class="prev">이전으로</button>
+           <button type="button" onclick="next()" class="next">다음으로</button>
+       </div><!--list-->
+       
+    <div class="go_home">
+      <a href="index.html" class="go_home">홈페이지로 가기</a>
+      </div>
+      </div><!--content-->
+</body>
+</html>

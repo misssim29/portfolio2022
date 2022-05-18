@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    } 
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; background:#000; overflow: hidden;}
+img{max-width: 100%;;}
+.absolute{position: absolute; top: 0; left: 0;}
+.graph{position: absolute; top:384px; left: 288px; height: 0; overflow: hidden; }
+.graph img{max-width: 502px; width: 502px;}
+@keyframes graphAni{
+    0%{transform: translateY(20px); opacity: 0.5;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+.event{position: absolute; top: 0; left: 0; width: 100%; height: 768px;}
+.piButton{position: absolute; bottom: 130px; right: 100px; width: 76px;z-index: 5; }
+.pipopup{position: absolute; top: 0; left: 0; background: rgba(0,0,0,0.4); display: none; z-index: 6;}
+.arrow{display: none;}
+.zoom{display: none;}
+.mouth{position: absolute; top: 240px; width: 366px; left: 340px; display: none;}
+.drug{position: absolute; top: 520px; left: 440px; width: 165px;display: none;}
+.drugAni{animation: AniDrug 2s ease 1 backwards;opacity: 0; filter: blur(8px);}
+@keyframes AniDrug{ 
+    0%{opacity: 1; filter: blur(0);}
+    100%{opacity: 0; filter: blur(8px);}
+}
+.hightlight{position: absolute; top: 455px; left: 420px; width: 208px; opacity: 0;}
+.hightAni{animation: AniHight 0.3s steps(2) 2; opacity: 0;}
+@keyframes AniHight{
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 1;}
+}

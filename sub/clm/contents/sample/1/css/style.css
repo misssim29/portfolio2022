@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*************	width: 64em / height: 48em *****************/
+
+body,html {
+/* margin: 0 auto 화면 중앙 배치 */
+width: 100%;
+height: 100%;
+max-width:1024px;
+max-height:768px;
+margin: 0 auto;
+}
+
+
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; background:#000}
+.guide{background:url('../images/guide.jpg') no-repeat; background-size:1024px 768px; width:1024px; height:768px; position:absolute; top:0; left:0; padding:0px; margin:0px; z-index:99; opacity:0.5; }
+.background{position:absolute; top:0; left:0; width:1024px; height:768px; z-index:10; display:block}
+.gun_1{position:absolute; top:179px; left:281px; width:462.5px; height:551px; z-index:12; }
+.gun_2{position:absolute; top:200px; left:250px; width:613px; height:532.5px; z-index:12; opacity:0}
+.gun_3{position:absolute; top:200px; left:432px; width:432px; height:532.5px; z-index:12; opacity:0 }
+.water_drop{position:absolute; top:172px; left:155px; width:666.5px; height:237.5px; z-index:11; opacity:0 }
+.btn_touch{position:absolute; top:571px; left:561px; width:128px; height:127.5px; z-index:13; opacity:0.8; }
+#remainCnt{position:absolute; top:284px; left:412px; width:200px; height:200px; text-align:center; font-size:150px; font-weight:800; color:#ffffff; z-index:13; opacity:0.6}
+
+
+#scene1{display:block;}
+#scene2{display:none;}
+
+.hiddenItem{
+	opacity:0;
+	transition:0.2s linear;
+}
+.moveRight{	
+	opacity: 0.9;
+	transform:  translateX(15px);
+	transition: 0.6s cubic-bezier(0,1.58,.86,1.55);
+}
+
+

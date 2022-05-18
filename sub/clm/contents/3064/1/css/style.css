@@ -1,0 +1,34 @@
+@charset "utf-8";
+*{padding:0; margin:0;}
+*{-webkit-tap-highlight-color : rgba(0,0,0,0);}
+*:focus{outline: none;}
+img{width: 100%;}
+button{background: none; border:none; cursor: pointer;}
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; overflow: hidden; background: url(../images/bg.jpg) no-repeat; background-size: 100%;}
+
+.title{width:100%; position: absolute; left:0; top:127px; transform: scaleX(0)}
+.title.on{animation: Ani 1s forwards;}
+
+@keyframes Ani{
+    from{transform: scaleX(0)}
+    to{transform: scaleX(1)}
+}
+
+
+.people{width:740px; position: absolute; top:331px; left:138px; overflow: hidden; height: 111px; background: url(../images/people.png) no-repeat; -webkit-background-size: 100%; background-size: 100%;}
+.people_on{height: 111px; width:0px; overflow: hidden;}
+.people_on img{width:740px;}
+
+.result{width:500px; position: absolute; top:437px; left:0; opacity: 0;}
+.result2{width:303px; position: absolute; top:437px; left:476px; opacity: 0;}
+.result3{width:245px; position: absolute; top:437px; right:0; opacity: 0;}

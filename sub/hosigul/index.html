@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사노피 호시절</title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <!--랜딩페이지-->
+    <div class="intro">
+        <div class="intro1">
+            <img src="images/rail.png" alt="rail" class="rail">
+            <div class="intro_train">
+                <img src="images/train1.png" alt="train">
+                <img src="images/gas2.gif" alt="gas" class="gas2">
+            </div>
+
+        </div>
+        <div class="intro2">
+            <div class="clouds">
+                <img src="images/cloud1.png" alt="cloud" class="cloud1">
+                <img src="images/cloud2.png" alt="cloud" class="cloud2">
+                <img src="images/cloud3.png" alt="cloud" class="cloud3">
+                <img src="images/cloud4.png" alt="cloud" class="cloud4">
+                <img src="images/cloud5.png" alt="cloud" class="cloud5">
+                <img src="images/cloud6.png" alt="cloud" class="cloud6">
+                <img src="images/cloud7.png" alt="cloud" class="cloud7">
+                <img src="images/cloud5.png" alt="cloud" class="cloud8">
+                <img src="images/cloud5.png" alt="cloud" class="cloud9">
+                <img src="images/cloud6.png" alt="cloud" class="cloud10">
+                <img src="images/cloud5.png" alt="cloud" class="cloud11">
+            </div>
+            <img src="images/hosi.jpg" alt="호시절" class="hosi">
+        </div>
+    </div>
+    <div class="sound">
+        <button type="button" class="btn_sound off"></button>
+    </div>
+    <div class="txt">
+        <p class="txt_right">© Sanofi 2006-2021 SANOFI-AVENTIS KOREA CO., LTD. All rights reserved</p>
+    </div>
+    <div id="containment-wrapper">
+        <div id="draggable" class="draggable ui-widget-content">
+            <!-- 배경 -->
+            <img src="images/background.jpg" alt="train" class="bg">
+            <!-- 기차 -->
+            <div class="train1">
+                <img src="images/train1.png" alt="train">
+                <img src="images/gas2.gif" alt="gas" class="gas2">
+            </div>
+            <div class="train2">
+                <img src="images/train2.png" alt="train">
+                <img src="images/gas.gif" alt="gas" class="gas">
+            </div>
+            <!-- 열기구 -->
+            <div class="balloon">
+                <img src="images/balloon.png" alt="balloon" class="balloon_on">
+            </div>
+            <!-- 버튼 -->
+            <div class="btns">
+                <img src="images/btn_dm.png" alt="btn_dm" class="btn_dm">
+                <img src="images/btn_deliver.png" alt="btn_deliver" class="btn_deliver">
+                <img src="images/btn_solimix.png" alt="btn_solimix" class="btn_solimix">
+                <img src="images/btn_quiz.png" alt="btn_quiz" class="btn_quiz">
+                <img src="images/btn_learn.png" alt="btn_learn" class="btn_learn">
+            </div>
+            <!-- 사노피건물 -->
+            <div class="sanofi_building">
+                <img src="images/sanofi_building.png" alt="사노피빌딩">
+            </div>
+            <!-- 나무 -->
+            <div class="tree">
+                <img src="images/tree.png" alt="나무">
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <button type="button" class="close">
+            <img src="images/close.png" alt="close">
+        </button>
+        <div class="popup_dm popup1">
+            <button type="button" class="pi"></button>
+            <button type="button" class="goto2005"></button>
+            <button type="button" class="goto2015"></button>
+            <button type="button" class="goto2018"></button>
+            <img src="images/popup_dm.jpg" alt="popup_dm">
+        </div>
+        <div class="pages">
+            <button type="button" class="return" id="return">
+                <img src="images/return.png" alt="return">
+            </button>
+            <div class="page_pi"><img src="images/page_pi.jpg" alt="page_pi"></div>
+            <div class="page1">
+                <button type="button" class="more" id="more"></button>
+                <img src="images/dm_page1.jpg" alt="bg" class="dm_bg">
+            </div>
+            <div class="result1 result">
+                <img src="images/dm_page1_result.jpg" alt="result">
+            </div>
+            <div class="page2">
+                <button type="button" class="more" id="more"></button>
+                <img src="images/dm_page2.jpg" alt="bg" class="dm_bg">
+            </div>
+            <div class="result2 result">
+                <img src="images/dm_page2_result.jpg" alt="result">
+            </div>
+            <div class="page3">
+                <button type="button" class="more" id="more"></button>
+                <img src="images/dm_page3.jpg" alt="bg" class="dm_bg">
+            </div>
+            <div class="result3 result">
+                <img src="images/dm_page3_result.jpg" alt="result">
+            </div>
+        </div>
+        <div class="popup_deliver popup2">
+            <img src="images/popup_deliver.jpg" alt="popup_deliver">
+        </div>
+        <div class="popup_solimix popup3">
+            <img src="images/popup_solimix.jpg" alt="popup_solimix">
+        </div>
+        <div class="popup_quiz popup4">
+            <button type="button" class="return" id="return">
+                <img src="images/return.png" alt="return">
+            </button>
+            <div class="quiz1">
+                <img src="images/popup_quiz1.jpg" alt="popup_quiz" class="quiz1_bg">
+                <button type="button" class="btn_result result1"><img src="images/quiz1_after1.png" alt="after"></button>
+                <button type="button" class="btn_result result2"><img src="images/quiz1_after2.png" alt="after"></button>
+                <button type="button" class="btn_result result3"><img src="images/quiz1_after3.png" alt="after"></button>
+                <button type="button" class="next">
+                    <img src="images/next.png" alt="next">
+                </button>
+            </div>
+            <div class="quiz2">
+                <img src="images/popup_quiz2.jpg" alt="popup_quiz" class="quiz2_bg">
+                <button type="button" class="btn_result result1"><img src="images/quiz2_after1.png" alt="after"></button>
+                <button type="button" class="btn_result result2"><img src="images/quiz2_after2.png" alt="after"></button>
+                <button type="button" class="btn_result result3"><img src="images/quiz2_after3.png" alt="after"></button>
+            </div>
+        </div>
+        <div class="popup_portfolio popup5">
+            <img src="images/portfolio.jpg" alt="popup_portfolio">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

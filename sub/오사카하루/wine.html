@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오사카하루-와인 및 주류</title>
+    <link rel="stylesheet" type="text/css" href="css/wine.css">
+    <link rel="shortcut icon" href="images/pavicon.ico">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script type="text/javascript">
+    
+    function next(){
+        $(".wine").fadeOut();
+        $(".next").fadeOut();
+        $(".drink").fadeIn();
+        $(".prev").fadeIn();
+    }
+       
+       function prev(){
+           $(".drink").fadeOut();
+           $(".prev").fadeOut();
+           $(".wine").fadeIn();
+           $(".next").fadeIn();
+       }
+       
+       function btn_menu(){
+            $(".header").animate({width:"100%"},"slow");
+            $(".btn_menu").hide();
+            $(".btn_close").show();
+            $(".header ul").show();
+        };
+        
+        function btn_close(){
+            $(".header").animate({width:"0%"},"slow");
+            $(".btn_close").hide();
+            $(".btn_menu").show();
+            $(".header ul").hide();
+        }
+    </script>
+    
+    
+    
+</head>
+<body>
+   <button type="button" onclick="btn_menu()" class="btn_menu"></button>
+  <button type="button" onclick="btn_close()" class="btn_close"></button>
+   <div class="header">
+       <ul>
+           <li><a href="yakiniku.html">야끼니꾸<span class="bar"></span></a></li>
+           <li><a href="best_food.html">일품요리<span class="bar"></span></a></li>
+           <li><a href="dinner.html">식사<span class="bar"></span></a></li>
+           <li><a href="sidemenu.html">사이드메뉴<span class="bar"></span></a></li>
+           <li><a href="wine.html">와인 및 주류<span class="bar"></span></a></li>
+       </ul>
+   </div>
+   <div class="content">
+    <div class="wine">
+     <h3 class="wine_title">와인</h3>
+     <ul class="wine_first">
+        <li>Ochagavia Gran Reserva</li>
+        <li>Contri Spumanti Primitivo Di Manduria</li>
+        <li>1851 Merlot</li>
+        <li>PUDU</li>
+        <li>Bleasdale, Frank Potts</li>
+        <li>Apaltagua Envero Gran Reserva </li>
+        <li>Santa Maria Romance Reserva Cabernet Sauvignon</li>
+        <li>Ochagaiva Raices Nobles</li>
+        <li>Woodstock Pilot’s View Shiraz</li>
+        <li>SMITH &amp; HOOK Cabernet  Sauvignon 2013</li>
+        <li>Contri Spumanti Primitivo Di Manduria</li>
+        </ul><ul>
+        <li>Torre Raone, San Zopito Montepulciano d'Abruzzo</li>
+        <li>Michele Satta, Bolgheri Rosso</li>
+        <li>Chateau Saint Cosme Cotes du Rhone Rouge 2017</li>
+        <li>Contri Spumanti, Salice Salentino Riserva</li>
+        <li>100% Appassimento Segreto Rosso</li>
+        <li>Vineyard Reserve Shiraz Cabernet</li>
+        <li>Gusto Syrah</li>
+        <li>Paso Del Sol Merlot</li>
+        <li>AVE DE PRESA PREMIER</li>
+    <li>Vinoletto Garnacha Dry</li>
+    <li>JR Rotgipfler</li>
+    <li>Toi Toi RESERVE Sauvignon Blanc</li>
+    <li>Santa Ines Sauvignon Blanc ‘17
+</li>
+    <li>Silvestre Chardonnay</li>
+    <li>Armand de Brignac Brut Gold</li>
+    <li>Contri Spumanti, Corte Viola Moscato Dolce</li>
+    <li>La Brisa Dry Espumoso</li>
+    <li>La Brisa Black Ser-dry Espumoso</li>
+     </ul>
+     <div class="wine_img"></div>
+     </div><!--wine-->
+     
+      
+     <div class="drink">
+         <div class="drink_img"></div>
+         <ul class="beer">
+            <h3 class="p2_h2">맥주</h3>
+             <li>테라</li>
+             <li>LoastCoast 워터멜론 수박맥주</li>
+             <li>에델바이스</li>
+             <li>아사히/ 아사히 블랙</li>
+             <li>아잉거 브로바이스</li>
+             <li>삿포로</li>
+             <li>기린</li>
+         </ul>
+         
+         <ul class="soju">
+            <h3 class="p2_h2">소주</h3>
+             <li>참이슬</li>
+             <li>좋은데이</li>
+             <li>한라산</li>
+         </ul>
+        
+         <ul class="coke">
+             <h3 class="p2_h2">음료</h3>
+             <li>콜라/사이다</li>
+             <li>토닉워터</li>
+         </ul>
+         
+         
+     </div>
+     
+     
+    <div class="go_home">
+      <a href="index.html" class="go_home">홈페이지로 가기</a>
+      </div>
+      </div><!--content-->
+      <button type="button" onclick="prev()" class="prev"><span>와인</span></button>
+           <button type="button" onclick="next()" class="next"><span>맥주 및 주류</span></button>
+</body>
+</html>

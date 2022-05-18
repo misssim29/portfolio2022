@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+*{padding:0; margin:0; list-style: none; text-decoration: none;}
+*{-webkit-tap-highlight-color :rgba(0, 0, 0, 0)}
+button{border:none;}
+button:focus{outline: none}
+
+.wrap{width:1152px; height:768px; margin:0 auto; overflow: hidden; background: url(../images/bg.jpg) no-repeat; background-size: 100%; position:relative;}
+img{width:100%}
+
+button{background: none; cursor: pointer;}
+.nav{position:absolute; top:52px; right:130px;}
+.nav button{margin:0 10px}
+.nav .prev{width:15px;}
+.nav .home{width:29px;}
+
+.cards{position:absolute; left:112px; top:211px;}
+.cards > div{width:298px; position:absolute;}
+.cards > div > img{position:absolute;}
+.card1{top:0; left:0;}
+.card1 img.on{transform: scaleX(0); animation: unfold .5s forwards 1s}
+.card1 img.off{animation: fold .5s forwards .5s}
+.card2{top:0; left:315px;}
+.card2 img.on{transform: scaleX(0); animation: unfold .5s forwards 2.2s}
+.card2 img.off{animation: fold .5s forwards 1.7s}
+.card3{top:0; left:629px;}
+.card3 img.on{transform: scaleX(0); animation: unfold .5s forwards 3.4s}
+.card3 img.off{animation: fold .5s forwards 2.9s}
+
+@keyframes fold{
+    from{transform: scaleX(1)}
+    to{transform: scaleX(0)}
+}
+@keyframes unfold{
+    from{transform: scaleX(0)}
+    to{transform: scaleX(1)}
+}

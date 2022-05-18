@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오사카하루-일품요리</title>
+    <link rel="stylesheet" type="text/css" href="css/best_food.css">
+    <link rel="shortcut icon" href="images/pavicon.ico">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".first_list li:eq(0)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(0)").addClass("fix");
+            $(".big_img li:eq(0)").removeClass("none");
+        })
+        $(".first_list li:eq(1)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(1)").addClass("fix");
+            $(".big_img li:eq(1)").removeClass("none");
+        })
+         $(".first_list li:eq(2)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(2)").addClass("fix");
+            $(".big_img li:eq(2)").removeClass("none");
+        })
+         $(".first_list li:eq(3)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(3)").addClass("fix");
+            $(".big_img li:eq(3)").removeClass("none");
+        })
+         $(".first_list li:eq(4)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(4)").addClass("fix");
+            $(".big_img li:eq(4)").removeClass("none");
+        })
+         $(".first_list li:eq(5)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(5)").addClass("fix");
+            $(".big_img li:eq(5)").removeClass("none");
+        })
+         $(".first_list li:eq(6)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(6)").addClass("fix");
+            $(".big_img li:eq(6)").removeClass("none");
+        })
+         $(".first_list li:eq(7)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(7)").addClass("fix");
+            $(".big_img li:eq(7)").removeClass("none");
+        })
+         $(".first_list li:eq(8)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(8)").addClass("fix");
+            $(".big_img li:eq(8)").removeClass("none");
+        })
+         $(".first_list li:eq(9)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(9)").addClass("fix");
+            $(".big_img li:eq(9)").removeClass("none");
+        })
+        
+        $(".second_list li:eq(0)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(9)").addClass("fix");
+            $(".big_img li:eq(9)").removeClass("none");
+        })
+        
+        $(".second_list li:eq(1)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(10)").addClass("fix");
+            $(".big_img li:eq(10)").removeClass("none");
+        })
+        
+        $(".second_list li:eq(2)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(11)").addClass("fix");
+            $(".big_img li:eq(11)").removeClass("none");
+        })
+        
+        $(".second_list li:eq(3)").click(function(){
+            $(".big_img li").removeClass("fix");
+            $(".big_img li").addClass("none");
+            $(".big_img li:eq(12)").addClass("fix");
+            $(".big_img li:eq(12)").removeClass("none");
+        })
+        
+       
+        
+        
+        
+    })
+        
+        function prev(){
+            $(".first_list").show();
+            $(".second_list").hide();
+        }
+        
+        function next(){
+            $(".second_list").show();
+            $(".first_list").hide();
+        }
+        
+         function btn_menu(){
+            $(".header").animate({width:"100%"},"slow");
+            $(".btn_menu").hide();
+            $(".btn_close").show();
+            $(".header ul").show();
+        };
+        
+        function btn_close(){
+            $(".header").animate({width:"0%"},"slow");
+            $(".btn_close").hide();
+            $(".btn_menu").show();
+            $(".header ul").hide();
+        }
+    
+        
+    </script>
+    
+</head>
+<body>
+  <button type="button" onclick="btn_menu()" class="btn_menu"></button>
+  <button type="button" onclick="btn_close()" class="btn_close"></button>
+   <div class="header">
+       <ul>
+           <li><a href="yakiniku.html">야끼니꾸<span class="bar"></span></a></li>
+           <li><a href="best_food.html">일품요리<span class="bar"></span></a></li>
+           <li><a href="dinner.html">식사<span class="bar"></span></a></li>
+           <li><a href="sidemenu.html">사이드메뉴<span class="bar"></span></a></li>
+           <li><a href="wine.html">와인 및 주류<span class="bar"></span></a></li>
+       </ul>
+   </div>
+   <div class="content">
+       <div class="big_img">
+         <ul>
+             <li class="fix"><img src="images/best_food/honma.jpg" alt="고송 혼마구로도후"><dl>
+                 <dt><span class="big_left">ほんまぐろ どうふ (고송 혼마구로도후)</span><span class="big_right">18000원</span></dt>
+                 <dd>두부 위에 고송버섯과 참치내장 젓갈을 올려 삼합으로 먹는 오사카하루 시그니쳐 메뉴</dd>
+             </dl>
+             </li>
+             <li class="none"> <img src="images/best_food/sashimi.jpg" alt="연어 사시미"><dl>
+                 <dt><span class="big_left">마리네이드 숙성 연어 사시미</span><span class="big_right">中 39500원 | 大 54000원</span></dt>
+                 <dd>연어를 마리네이드하여 12시간 숙성하여 잡내를 없애고 식감은 더욱 맛깔나게 살린 숙성 연어 사시미</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/chashu.jpg" alt="차슈 토마토 가라아게"><dl>
+                 <dt><span class="big_left">차슈 토마토 가라아케</span><span class="big_right">24000원</span></dt>
+                 <dd>일본식 보쌈 “차슈”를 가볍게 튀긴 후 상큼한 샐러드와 토마토를 곁들여 먹는 요리</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/tuna_tartar.jpg" alt="트러플 튜나 타르타르"><dl>
+                 <dt><span class="big_left">트러플 튜나 타르타르</span><span class="big_right">29000원</span></dt>
+                 <dd>생참치를 찹하여 트러플 특제 소스를 입힌 컨템포러리 요리</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/washabi_pasta.jpg" alt="와사비 명란 크림파스타"><dl>
+                 <dt><span class="big_left">와사비 명란 크림파스타</span><span class="big_right">19000원</span></dt>
+                 <dd>진한 크림에 특제 와사비 소스를 넣어 명란을 곁들인 일본식 파스타
+</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/tuna_pizza.jpg" alt="트러플 튜나 피자"><dl>
+                 <dt><span class="big_left">트러플 튜나 피자</span><span class="big_right">29000원</span></dt>
+                 <dd>도우 위에 트러플이 가미된 소스가 발린 참치 아카미 등살이 토핑 된 피자</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/abocado_siso.jpg" alt="아보카도 시소 육회"><dl>
+                 <dt><span class="big_left">아보카도 시소 육회</span><span class="big_right">29000원</span></dt>
+                 <dd>한우 홍두깨살을 시소소스에 버무려살 아보카도를 곁들인 육회</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/evi_pizza.jpg" alt="아보카도 에비 피자"><dl>
+                 <dt><span class="big_left">아보카도 에비 피자</span><span class="big_right">24000원</span></dt>
+                 <dd>도우 위에 아보카도를 발라 새우 토핑을 한 풍부한 맛의 피자</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/cracker.jpg" alt="오렌지솔트 크림치즈 크래커"><dl>
+                 <dt><span class="big_left">오렌지솔트 크림치즈 크래커</span><span class="big_right">19000원</span></dt>
+                 <dd>소금치즈와 오렌지 콩피를 함께 곁들인 크래커 안주</dd>
+             </dl></li>
+<li class="none"><img src="images/best_food/chicken_karake.jpg" alt="오사카 치킨 가라아게"><dl>
+                 <dt><span class="big_left">오사카 치킨 가라아게</span><span class="big_right">19000원</span></dt>
+                 <dd>일본식 치킨 가라아게 위에 아삭한 양파와 소스 등이 얹어진 컨템포러리 요리</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/salmon_head.jpg" alt="오사카 치킨 가라아게"><dl>
+                 <dt><span class="big_left">살몬 야끼모노</span><span class="big_right">24000원</span></dt>
+                 <dd>연어머리 오븐구이</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/odeng.jpg" alt="간사이 스지 오뎅탕"><dl>
+                 <dt><span class="big_left">간사이 스지 오뎅탕</span><span class="big_right">22000원</span></dt>
+                 <dd>스지로 국물을 내어 깊은 맛이 나는 일본식 오뎅탕</dd>
+             </dl></li>
+             <li class="none"><img src="images/best_food/jjambbong.jpg" alt="카라이 오사카 짬뽕나베"><dl>
+                 <dt><span class="big_left">카라이 오사카 짬뽕나베</span><span class="big_right">22000원</span></dt>
+                 <dd>각종 해산물이 들어가 매콤한 일본식 짬뽕탕</dd>
+             </dl></li>
+            
+             
+         </ul>
+       </div>
+       <div class="list">
+          <ul class="first_list">
+             <li><span class="li_blackbox"></span><span class="li_txt2">고송<br>혼마구로도후</span><img src="images/best_food/honma.jpg" alt="고송혼마구로도후"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">마리네이드 숙성<br>연어 사시미</span><img src="images/best_food/sashimi.jpg" alt="마리네이드 숙성 연어 사시미"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">차슈 토마토<br>가라아게</span><img src="images/best_food/chashu.jpg" alt="차슈 토마토 가라아게"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">트러플 튜나<br>타르타르</span><img src="images/best_food/tuna_tartar.jpg" alt="트러플 튜나 타르타르"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">와사비 명란<br>크림파스타</span><img src="images/best_food/washabi_pasta.jpg" alt="와사비 명란 크림파스타"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">트러플 튜나<br>피자</span><img src="images/best_food/tuna_pizza.jpg" alt="트러플 튜나 피자"></li>
+             <li><span class="li_blackbox"></span><span class="li_txt2">아보카도<br>시소 육회</span><img src="images/best_food/abocado_siso.jpg" alt="아보카도 시소 육회"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt2">아보카도<br>에비 피자</span><img src="images/best_food/evi_pizza.jpg" alt="아보카도 에비 피자"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt2">오렌지솔트<br>크림치즈 크래커</span><img src="images/best_food/cracker.jpg" alt="오렌지솔트 크림치즈 크래커"></li>
+              </ul>
+              <ul class="second_list">
+              <li><span class="li_blackbox"></span><span class="li_txt2">오사카 치킨<br>가라아게</span><img src="images/best_food/chicken_karake.jpg" alt="오사카 치킨 가라아게"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt">살몬 야끼모노</span><img src="images/best_food/salmon_head.jpg" alt="살몬 야끼모노"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt2">간사이<br>스지 오뎅탕</span><img src="images/best_food/odeng.jpg" alt="간사이 스지 오뎅탕"></li>
+              <li><span class="li_blackbox"></span><span class="li_txt2">카라이 오사카<br>짬뽕나베</span><img src="images/best_food/jjambbong.jpg" alt="카라이 오사카 짬뽕나베"></li>
+              
+              
+           </ul>
+           <button type="button" onclick="prev()" class="prev">이전으로</button>
+           <button type="button" onclick="next()" class="next">다음으로</button>
+       </div><!--list-->
+       
+    <div class="go_home">
+      <a href="index.html" class="go_home">홈페이지로 가기</a>
+      </div>
+      </div><!--content-->
+</body>
+</html>

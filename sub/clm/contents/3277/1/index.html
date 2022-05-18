@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>3277 LG 비모보</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">		
+        <link rel="stylesheet" type="text/css" href="./css/style_3.css" />		
+		<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>		
+		<script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.min.js"></script>		
+		<script type="text/javascript" src="./js/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="./js/main_3.js"></script>
+    </head>
+
+	<body>
+		<div class="wrap">
+            <div class="guide"></div>
+
+            <div class="title"><img src="./images/03/title.png" /></div>
+            
+            <div class="donut circle_1">
+                <img src="./images/03/circle_1.png" />
+                <svg width="100%" height="100%">
+                    <circle class="bg_circle no_1" stroke="#d36a2d" stroke-width="3" fill="none" cx="50%" cy="50%" r="48%"></circle>
+                    <circle class="draw_circle" id="circleNum_1" stroke="#d36a2d" stroke-width="10" fill="none" cx="50%" cy="50%" r="47%"></circle>
+                </svg>
+                <div class="donutText" id="text_1">-42.0</div>                
+            </div>
+
+            <div class="donut circle_2">
+                <img src="./images/03/circle_2.png" />
+                <svg width="100%" height="100%">
+                    <circle class="bg_circle no_2" stroke="#709f2d" stroke-width="3" fill="none" cx="50%" cy="50%" r="48%"></circle>
+                    <circle class="draw_circle" id="circleNum_2" stroke="#709f2d" stroke-width="10" fill="none" cx="50%" cy="50%" r="47%"></circle>
+                </svg>
+                <div class="donutText" id="text_2">-36.4</div>
+            </div>
+            
+            <div class="popup" id="footnote"><img src="./images/03/footnote.png" /></div>
+            <div class="blind"></div>
+            
+            <div class="common btn_home" onclick="fncGoSlide(null, '01_index.html')"><img src="./images/btn_home.png" /></div>
+            <div class="common btn_footnote" onclick="fncOpenPop('#footnote')"><img src="./images/btn_footnote.png" /></div>
+            <div class="common btn_pi" onclick="fncGoSlide(null, '08_index.html')"><img src="./images/btn_pi.png" /></div>
+		</div>
+
+        <script>
+            //원의 반지름을 div 넓이의 반에 48% 크기로 지정한다.
+            var radius = $(".donut").width();
+            radius = parseInt(radius*0.48, 0);
+            //원지름 구하기
+            var circle_len = parseInt((2*radius)*3.14, 0);
+            //circle_len의 원지름크기에 색으로 표시 할 백분율을 곱하여 1번째 파라미터에 지정하고 남은 크기를 빈공간으로 표시
+            var drawStr_1 = parseInt(circle_len*0.42, 0)+', '+parseInt(circle_len*0.58, 0);
+            var drawStr_2 = parseInt(circle_len*0.36, 0)+', '+parseInt(circle_len*0.64, 0);       
+            console.log(radius);     
+            console.log(circle_len);     
+            console.log(drawStr_1);     
+            $("#circleNum_1").attr("stroke-dasharray", drawStr_1);
+            $("#circleNum_2").attr("stroke-dasharray", drawStr_2);            
+            // console.log(radius);
+            // console.log(circle_len);
+        </script>
+	</body>
+</html>

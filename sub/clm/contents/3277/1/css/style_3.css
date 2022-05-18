@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*************	width:  64em / height:  48em *****************/
+
+body,html {
+/* margin:  0 auto 화면 중앙 배치 */
+width:  100%;
+height:  100%;
+margin:  0 auto;
+}
+
+.wrap{
+    background:url('../images/03/bg.jpg') no-repeat; background-size: 100%; 
+    position: relative; width: 100vw; height: 75vw; padding: 0px; margin: 0 auto; box-sizing: border-box;
+    /* max-width: 1024px; max-height: 768px; */
+}
+.guide{
+    background:url('../guide.jpg') no-repeat; background-size: 100%; 
+    position:absolute; top:0; left:0; width: 100%; height: 100%;     
+    padding: 0px; margin: 0px; z-index: 99; opacity: 0.4; display: none;
+}
+
+.common.btn_home{position: absolute; bottom: 1.4%; left: 1.7%; width: 4.5%; z-index: 99}
+.common.btn_footnote{position: absolute; bottom: 1.4%; left: 7.5%; width: 4.5%; z-index: 99}
+.common.btn_pi{position: absolute; bottom: 1.4%; left: 13.3%; width: 4.5%; z-index: 99}
+.common img{width:100%;}
+
+.menu.box_1{position: absolute; bottom: 11.0%; left: 3.4%; width: 34%; opacity: 0}
+.menu.box_2{position: absolute; bottom: 11.0%; left: 33.6%; width: 34%; opacity: 0}
+.menu.box_3{position: absolute; bottom: 11.0%; left: 63.6%; width: 34%; opacity: 0}
+.menu img{width: 100%;}
+
+.blind{position: absolute; top: 0; left: 0; background:#719f2d; width: 100%; height: 100%; opacity: 0.5; display: none; z-index: 90}
+.popup{position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; z-index: 91}
+.popup img{width: 100%;}
+
+.title{position: absolute; top: 8.5%; width: 100%; opacity: 0; }
+.title img{width: 100%;}
+
+.donut{position:absolute; width: 15.625%; height: 20.84%; overflow: hidden; display: block;}
+.donut img{position: absolute; top: 0; left: 1.4%; width: 100%; opacity: 0}
+.donut svg{display: none;}
+.donut.circle_1{top: 36%; right: 18.2%;}
+.donut.circle_2{top: 58%; right: 18.2%;}
+#text_1{position: absolute; top: 53%; width: 100%; font-size: 4vw; color: #d36a2d; font-weight: bold; letter-spacing: -3px; text-align: center; opacity: 0}
+#text_2{position: absolute; top: 53%; width: 100%; font-size: 4vw; color: #709f2d; font-weight: bold; letter-spacing: -3px; text-align: center; opacity: 0}
+
+
+.draw_circle{
+    animation: draw_donuts 1.7s reverse ease-out;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+#menu_popup_4_text_1{position: absolute; width:100%; top:283px; overflow: hidden; display:block;}
+#menu_popup_4_text_2{position: absolute; width:100%; top:493px; overflow: hidden; display:block;}
+
+@keyframes draw_donuts{
+    to { stroke-dasharray:0 10000;}
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+*{padding:0; margin:0;}
+*{-webkit-tap-highlight-color : rgba(0,0,0,0);}
+*:focus{outline: none;}
+img{width: 100%;}
+button{background: none; border:none; cursor: pointer;}
+body,html {
+    /* margin: 0 auto 화면 중앙 배치 */
+    width: 100%;
+    height: 100%;
+    max-width:1024px;
+    max-height:768px;
+    margin: 0 auto;
+    overflow: hidden;
+    }
+
+.wrap{position:absolute; width:1024px; height:768px; margin:0 auto; overflow: hidden; background: url(../images/bg.jpg) no-repeat; background-size: 100%;}
+
+.title1{width:100%; position:absolute; top:103px; left:0; transform: scale(0)}
+.title2{width:100%; position:absolute; top:320px; left:0; opacity: 0;}
+.title3{width:100%; position:absolute; top:468px; left:0;}
+.title1.on{animation: Ani 2s forwards}
+@keyframes Ani{
+    0%{transform: scale(0)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1)}
+}
+
+.mosquito{width:445px; height: 260px; position :absolute; bottom:64px; right:45px; display: none;}
+.mosquito img{width:35px; position:absolute;}
+.mos1{top:125px; left:20px; animation: mos1 5s infinite linear}
+.mos2{top:84px; left:60px; animation: mos2 5s infinite linear}
+.mos3{top:75px; left:285px; animation: mos3 5s infinite linear}
+
+
+@keyframes mos1{
+    0%{transform: translate(0,0)}
+    10%{transform: translate(20px,-20px)}
+    20%{transform: translate(40px,0px)}
+    30%{transform: translate(60px,20px)}
+    40%{transform: translate(80px,0px)}
+    50%{transform: translate(100px,-20px)}
+    60%{transform: translate(80px,-40px)}
+    70%{transform: translate(60px,-60px)}
+    80%{transform: translate(40px,-80px)}
+    90%{transform: translate(20px,-30px)}
+    100%{transform: translate(0px,0px)}
+}
+
+@keyframes mos2{
+    0%{transform: translate(0,0)}
+    10%{transform: translate(20px,20px)}
+    20%{transform: translate(0px,40px)}
+    30%{transform: translate(-20px,60px)}
+    40%{transform: translate(0px,80px)}
+    50%{transform: translate(20px,60px)}
+    60%{transform: translate(40px,40px)}
+    70%{transform: translate(60px,20px)}
+    80%{transform: translate(40px,40px)}
+    90%{transform: translate(20px,20px)}
+    100%{transform: translate(0px,0px)}
+}
+
+@keyframes mos3{
+    0%{transform: translate(0,0)}
+    10%{transform: translate(-20px,-20px)}
+    20%{transform: translate(-40px,-40px)}
+    30%{transform: translate(-60px,-60px)}
+    40%{transform: translate(-80px,-40px)}
+    50%{transform: translate(-100px,-20px)}
+    60%{transform: translate(-80px,-0px)}
+    70%{transform: translate(-60px,20px)}
+    80%{transform: translate(-40px,40px)}
+    90%{transform: translate(-20px,20px)}
+    100%{transform: translate(0px,0px)}
+}
