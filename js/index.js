@@ -234,12 +234,21 @@ $(function(){
         var viewIdx = $(this).parent().parent().index();
 
         switch(viewIdx){
-            case 0 : window.open("http://whatsthecraic.dothome.co.kr/");
+            case 0 : window.open("../sub/hosigul/index.html");
             break;
-            case 1 : window.open("http://whatsthecraic.dothome.co.kr/");
+            case 1 : window.open("../sub/clm/index.html");
             break;
             case 2 : window.open("http://whatsthecraic.dothome.co.kr/");
             break;
+            case 3 : window.open("../sub/handok/index.html");
+            break;
+            case 4 : window.open("../sub/osakaharu/index.html");
+            break;
+            case 5 : window.open("../sub/animation_sample/index.html");
+            break;
+            case 6 : window.open("../sub/bmi/index.html");
+            break;
+            case 7 : window.open("../sub/online_booth/index.html");
         }
     })
 });

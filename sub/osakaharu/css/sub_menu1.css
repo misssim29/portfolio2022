@@ -1,0 +1,106 @@
+/*폰트*/
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+
+
+/*리셋*/
+body,h1,h2,h3,h4,p,div,ul,li,dl,dt,dd,table,td,tr,img{margin:0; padding:0;}
+ul,li{list-style:none}
+a{text-decoration: none; color:white}
+body, button, input{font-family: 'Nanum Myeongjo', serif;; line-height:1.5;
+    letter-spacing: -1px; direction: ltr; color:#e4e4e4;}
+button{cursor: pointer;}
+html, body{height:100%; width:100%;}
+
+
+/* 일반 PC: width: 1,000 이상 */
+
+@media screen and (min-width:1900px){
+    body, button, input, a{font-size:18px;}
+}
+
+@media screen and (min-width:1600px) and (max-width:1899px){
+    body, button, input, a{font-size:15pt;}
+}
+
+@media screen and (min-width:1400px) and (max-width:1599px){
+    body, button, input, a{font-size:14pt;}
+}
+
+
+@media screen and (min-width:1280px) and (max-width:1399px){
+    body, button, input, a{font-size:13pt;}
+}
+
+@media screen and (min-width:1000px) and (max-width:1279px){
+    body, button, input, a{font-size:12pt;}
+}
+
+ /* 태블릿 PC: width: 1,000 미만 640px 이상 */
+@media screen and (min-width:640px) and (max-width:999px){
+    body, button, input, a{font-size:11pt;}
+}
+
+ /* 모바일: width: 640px 미만 */
+@media screen and (max-width:639px){
+    body, button, input, a{font-size:9pt;}
+}
+    
+
+
+/*바디*/
+
+@media screen and (min-width:992px){
+
+body{background: url(../images/m2_img.jpg) 60% 50% no-repeat; background-size:120%; width:100%; height: 100%;}
+.blackbox{position:absolute; height: 100%; width:100%; background: black; opacity:0.7; z-index:1; display:none;}
+
+/*헤더*/
+.header{z-index: 2; color:#e4e4e4; position:absolute; top:5%; width:100%; height:20%;}
+.header li{float:left; width:20%; text-align: center; font-weight:bold; height:30px;}
+.header li a{display:inline-block; height:100%; position:relative; font-size:1.3em}
+.bar{display: inline-block; width:0; background:#e4e4e4; height:5px; border-radius:5px; transition:all 0.5s; }
+.header li a:hover .bar{width:100%;}
+
+/*내용*/
+.content{z-index:2; color:#e4e4e4; position:absolute; top:45%; height:40%; width:100%;}
+.content div{float:left;}
+.left_img{background: url(../images/s1_left_img.jpg) no-repeat; width:33%; height:100%; background-size: 100%; opacity:0; margin-top:1%;}
+.right_img{background: url(../images/s1_right_img.jpg) no-repeat; width:33%; height: 100%; background-size: 100%; opacity:0; margin-top:1%;}
+.txt{width:34%; margin-top:1%; opacity:0;}
+.txt dl{margin:5%;}
+.txt dt{font-size:2em;}
+.txt dd{font-size:1.1em;}
+
+.go_home{position:relative; width:50px; height:100%; margin:auto;}
+.go_home a{display:block; z-index:3; position:absolute; text-indent:-9999px; background: url(../images/s1_home.png) no-repeat; width:50px; height:50px; background-size:100%; bottom:1%;}
+    
+    
+}
+
+
+
+/*모바일*/
+
+@media screen and (max-width:991px){
+    
+ 
+/*바디*/
+
+
+body{background: url(../images/m2_img.jpg) 50% 50% no-repeat; background-size:300%; width:100%; height: 100%;}
+.blackbox{position:absolute; height:100%; width:100%; background: black; opacity:0.7; z-index:1; display:none;}
+
+/*헤더*/
+    .header{width:100%; height:80%; position:absolute; z-index:50;}
+    .header ul{height: 100%; width:100%; margin-top:30%}
+    .header li{float:left; margin:5%; width:40%; border:5px solid #e4e4e4; height:20%; box-sizing: border-box; border-radius:20%;}
+    .header li a{font-size:3rem; width:100%; text-align:center; display: block; height:70%; padding-top:27%; font-weight:bold;}
+    
+
+/*내용*/
+.content{z-index:2; color:#e4e4e4; position:absolute; top:45%; height:40%; width:100%; display:none;}
+
+.go_home{position:relative; width:150px; height:100%; margin:auto;}
+.go_home a{display:block; z-index:55; position:absolute; text-indent:-9999px; background: url(../images/s1_home.png) no-repeat; width:150px; height:150px; background-size:100%; bottom:1%;}   
+    
+}
