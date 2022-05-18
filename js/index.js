@@ -234,21 +234,21 @@ $(function(){
         var viewIdx = $(this).parent().parent().index();
 
         switch(viewIdx){
-            case 0 : window.open("../sub/hosigul/index.html");
+            case 0 : window.open("https://misssim29.github.io/portfolio2022/sub/hosigul/index.html");
             break;
-            case 1 : window.open("../sub/clm/index.html");
+            case 1 : window.open("https://misssim29.github.io/portfolio2022/sub/clm/index.html");
             break;
             case 2 : window.open("http://whatsthecraic.dothome.co.kr/");
             break;
-            case 3 : window.open("../sub/handok/index.html");
+            case 3 : window.open("https://misssim29.github.io/portfolio2022/sub/handok/index.html");
             break;
-            case 4 : window.open("../sub/osakaharu/index.html");
+            case 4 : window.open("https://misssim29.github.io/portfolio2022/sub/osakaharu/index.html");
             break;
-            case 5 : window.open("../sub/animation_sample/index.html");
+            case 5 : window.open("https://misssim29.github.io/portfolio2022/sub/animation_sample/index.html");
             break;
-            case 6 : window.open("../sub/bmi/index.html");
+            case 6 : window.open("https://misssim29.github.io/portfolio2022/sub/bmi/index.html");
             break;
-            case 7 : window.open("../sub/online_booth/index.html");
+            case 7 : window.open("https://misssim29.github.io/portfolio2022/sub/online_booth/index.html");
         }
     })
 });
