@@ -236,7 +236,7 @@ $(function(){
         {cNum: 0,  loadUrl: "contents/4359/", pageLastIdx: 2, ContentH3: "애니메이션,그래프", ContentH4: "#나타나기 #강조 #도넛그래프", Contentp: "차오르는 도넛그래프와 제목 및 밑줄 강조효과 애니메이션을 확인하실 수 있습니다."},
         {cNum: 1,  loadUrl: "contents/4274/", pageLastIdx: 2, ContentH3: "애니메이션", ContentH4: "#골프 #이미지전환 #이동", Contentp: "이미지 전환과 골프 슈팅 애니메이션 모션을 확인하실 수 있습니다."},
         {cNum: 2,  loadUrl: "contents/4244/", pageLastIdx: 1, ContentH3: "그래프,애니메이션", ContentH4: "#도넛그래프 #카운트", Contentp: "그래프가 도넛모양으로 차오르고 숫자가 카운트 되는 모션을 확인하실 수 있습니다."},
-        {cNum: 3,  loadUrl: "contents/3940/", pageLastIdx: 2, ContentH3: "유저참여형", ContentH4: "#클릭 #드래그 #팝업", Contentp: "사용자가 직접 참여하는 형태로 버튼을 눌러 팝업을 열고 드래그바를 움직여 항목을 선택할 수 있습니다."}, 
+        {cNum: 3,  loadUrl: "contents/3940/", pageLastIdx: 1, ContentH3: "유저참여형", ContentH4: "#클릭 #드래그 #팝업", Contentp: "사용자가 직접 참여하는 형태로 버튼을 눌러 팝업을 열고 드래그바를 움직여 항목을 선택할 수 있습니다."}, 
         {cNum: 4,  loadUrl: "contents/3590/", pageLastIdx: 3, ContentH3: "그래프,애니메이션", ContentH4: "#선그래프 #막대그래프 #강조 #나타나기", Contentp: "기본형 선그래프, 막대그래프, 강조 모션과 하단 오른쪽 버튼 클릭시 스크롤형태의 팝업페이지를 확인하실 수 있습니다."}, 
         {cNum: 5,  loadUrl: "contents/3437/", pageLastIdx: 2, ContentH3: "애니메이션", ContentH4: "#이동 #나타나기 #형태변화", Contentp: "형태변화와 움직이는 애니메이션을 확인하실 수 있습니다."}, 
         {cNum: 6,  loadUrl: "contents/3433/", pageLastIdx: 2, ContentH3: "애니메이션", ContentH4: "#강조 #나타나기", Contentp: "강조와 등장의 기본형 애니메이션을 확인하실 수 있습니다."}, 
